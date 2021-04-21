@@ -2,15 +2,14 @@
   <div>
     <section class="bg-white border-b py-8">
       <div class="container max-w-5xl mx-auto m-8">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mt-3">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-green-600 mt-3">
           FAQ
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <div class="faq">
+            <div class="faq w-full">
               <input id="faq-a" type="checkbox">
               <label for="faq-a">
                 <p class="faq-heading">Question number 1?</p>
@@ -61,7 +60,6 @@
                   </p>
               </label>
             </div>
-          </div>
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
           <div class="w-full sm:w-1/2 p-6 mt-6">

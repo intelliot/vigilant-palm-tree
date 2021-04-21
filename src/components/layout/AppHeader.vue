@@ -42,10 +42,10 @@
           class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-green-600 lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <ul class="text-lg list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
               <router-link
-                class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                class="inline-block text-white no-underline py-2 px-4"
                 :class="currentRouteName === 'xrpledger' ? 'font-bold' : ''"
                 to="/xrp-ledger"
                 >The XRP Ledger</router-link
@@ -53,7 +53,7 @@
             </li>
             <li class="mr-3">
               <router-link
-                class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                class="inline-block text-white no-underline py-2 px-4"
                 :class="currentRouteName === 'developers' ? 'font-bold' : ''"
                 to="/developers"
                 >Developers</router-link
@@ -61,7 +61,7 @@
             </li>
             <li class="mr-3">
               <router-link
-                class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                class="inline-block text-white no-underline py-2 px-4"
                 :class="currentRouteName === 'faq' ? 'font-bold' : ''"
                 to="/faq"
                 >FAQ</router-link

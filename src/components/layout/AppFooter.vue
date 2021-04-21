@@ -9,7 +9,7 @@
           </a>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Links</p>
+          <p class="uppercase md:mb-6 text-green-600">Links</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
@@ -23,7 +23,7 @@
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+          <p class="uppercase md:mb-6 text-green-600">Legal</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Social</p>
+          <p class="uppercase md:mb-6 text-green-600">Social</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
@@ -48,7 +48,7 @@
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Company</p>
+          <p class="uppercase md:mb-6 text-green-600">About</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
