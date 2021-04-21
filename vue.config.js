@@ -40,6 +40,16 @@ module.exports = {
     config.plugins
       .delete('prefetch')
 
+    config.plugin('copy')
+      .tap(args => {
+        args[0].push({
+          from: path.resolve(__dirname, 'CNAME'),
+          to: path.resolve(__dirname, 'dist/CNAME'),
+          toType: 'file'
+        })
+        return args
+      })
+
     // Do not remove whitespaces
     config.module.rule('vue')
       .use('vue-loader')
