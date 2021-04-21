@@ -80,31 +80,31 @@
 </template>
 
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
   name: 'AppHeader',
-  components: {},
+  components: {}
 })
 export default class AppHeader extends Vue {
   windowTop: number = 0
-  created() {
+  created () {
     //
   }
 
-  mounted() {
+  mounted () {
     window.addEventListener('scroll', this.onScroll)
   }
 
-  beforeDestroy() {
+  beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  onScroll() {
+  onScroll () {
     this.windowTop = window.top.scrollY
   }
 
-  get currentRouteName() {
+  get currentRouteName () {
     return this.$route.name
   }
 }

@@ -9,16 +9,6 @@
     "changelog": "conventional-changelog --config ./commits.config.js -i CHANGELOG.md -s",
     "changelog:all": "conventional-changelog --config ./commits.config.js -i CHANGELOG.md -s -r 0",
     "dev": "NODE_ENV=development vue-cli-service serve",
-    "cy:run": "cypress run",
-    "cy:verify": "cypress verify",
-    "cy:info": "cypress info",
-    "cy:version": "cypress version",
-    "cy:cache:list": "cypress cache list",
-    "cy:run:record": "cypress run --record",
-    "cy:open": "cypress open",
-    "test:e2e": "PORT=3001 start-server-and-test dev http://localhost:3001 cy:run",
-    "test:unit": "jest",
-    "test:all": "yarn test:unit && yarn test:e2e",
     "deploy:ghp": "GIT_DEPLOY_REPO=https://github.com/xpring-eng/xrpl-developer-program-website.git lib/deploy.sh"
   },
   "dependencies": {
@@ -44,7 +34,6 @@
     "yarn": "^1.22.10"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
     "@types/vuelidate": "^0.7.13",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
@@ -56,7 +45,6 @@
     "@vue/eslint-config-typescript": "^5.0.1",
     "@vue/test-utils": "^1.1.2",
     "babel-eslint": "^10.0.3",
-    "cypress": "^6.2.1",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-node": "^11.0.0",
@@ -65,16 +53,13 @@
     "eslint-plugin-vue": "^6.1.2",
     "genversion": "^2.2.1",
     "husky": "^4.3.0",
-    "jest": "^26.6.3",
     "node-sass": "^4.13.1",
     "raw-loader": "^4.0.2",
     "sass-loader": "^8.0.2",
     "start-server-and-test": "^1.11.7",
-    "ts-jest": "^26.4.4",
     "ts-loader": "^8.0.11",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.2",
-    "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.11"
   },
   "commitlint": {
@@ -85,8 +70,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "yarn test:all"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "license": "MIT"
