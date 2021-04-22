@@ -12,51 +12,74 @@
             <div class="faq w-full">
               <input id="faq-a" type="checkbox">
               <label for="faq-a">
-                <p class="faq-heading">Question number 1?</p>
+                <p class="faq-heading">When is the application deadline?</p>
                 <div class="faq-arrow"></div>
                   <p class="faq-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium vel ante a porta. Aliquam pellentesque leo non ex pulvinar tincidunt. Maecenas elit elit, commodo at ultricies eu, euismod sit amet nisi. Pellentesque accumsan neque nisi, vel efficitur urna pellentesque vitae. Aenean quis consequat metus. Sed eget metus velit. Sed euismod tempus ligula sed viverra. Aenean dapibus finibus arcu nec posuere. Suspendisse potenti.
+                    May 31, 2021.
                   </p>
               </label>
               <input id="faq-b" type="checkbox">
               <label for="faq-b">
-                <p class="faq-heading">Question number 2?</p>
+                <p class="faq-heading">What is the range of award amounts?</p>
                 <div class="faq-arrow"></div>
                   <p class="faq-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium vel ante a porta. Aliquam pellentesque leo non ex pulvinar tincidunt. Maecenas elit elit, commodo at ultricies eu, euismod sit amet nisi. Pellentesque accumsan neque nisi, vel efficitur urna pellentesque vitae. Aenean quis consequat metus. Sed eget metus velit. Sed euismod tempus ligula sed viverra. Aenean dapibus finibus arcu nec posuere. Suspendisse potenti.
+                    While there is no set range, we intend to award between $10,000 and $200,000 per project. Awards of $150,000 and greater are typically for developers who have already successfully completed a project. In general, the larger the award, the more scrutiny the application will receive and the more questions the committee will have regarding how the money will be used. All projects must include a statement of work that helps the committee understand how the amount of funding requested was determined.
                   </p>
               </label>
               <input id="faq-c" type="checkbox">
               <label for="faq-c">
-                <p class="faq-heading">Question number 3?</p>
+                <p class="faq-heading">How mature does a project need to be in order to apply for a Grant?</p>
                 <div class="faq-arrow"></div>
                   <p class="faq-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium vel ante a porta. Aliquam pellentesque leo non ex pulvinar tincidunt. Maecenas elit elit, commodo at ultricies eu, euismod sit amet nisi. Pellentesque accumsan neque nisi, vel efficitur urna pellentesque vitae. Aenean quis consequat metus. Sed eget metus velit. Sed euismod tempus ligula sed viverra. Aenean dapibus finibus arcu nec posuere. Suspendisse potenti.
+                    We intend to fund projects that have at least a rudimentary prototype open-sourced on GitHub. The minimum is at least 4-8 hours of work (e.g. a minimum viable product or proof of concept created over a weekend). We will not fund projects that do not have at least some substantial open-source component.
                   </p>
               </label>
               <input id="faq-d" type="checkbox">
               <label for="faq-d">
-                <p class="faq-heading">Question number 4?</p>
+                <p class="faq-heading">What types of open source projects will be considered?</p>
                 <div class="faq-arrow"></div>
                   <p class="faq-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium vel ante a porta. Aliquam pellentesque leo non ex pulvinar tincidunt. Maecenas elit elit, commodo at ultricies eu, euismod sit amet nisi. Pellentesque accumsan neque nisi, vel efficitur urna pellentesque vitae. Aenean quis consequat metus. Sed eget metus velit. Sed euismod tempus ligula sed viverra. Aenean dapibus finibus arcu nec posuere. Suspendisse potenti.
+                    We are happy to consider any open source project, including but not limited to software, hardware, firmware, design, and networking projects. All projects must involve some amount of technical development.
                   </p>
               </label>
               <input id="faq-e" type="checkbox">
               <label for="faq-e">
-                <p class="faq-heading">Question number 5?</p>
+                <p class="faq-heading">How should I determine what size of an award to apply for?</p>
                 <div class="faq-arrow"></div>
                   <p class="faq-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium vel ante a porta. Aliquam pellentesque leo non ex pulvinar tincidunt. Maecenas elit elit, commodo at ultricies eu, euismod sit amet nisi. Pellentesque accumsan neque nisi, vel efficitur urna pellentesque vitae. Aenean quis consequat metus. Sed eget metus velit. Sed euismod tempus ligula sed viverra. Aenean dapibus finibus arcu nec posuere. Suspendisse potenti.
+                    The award amount you request should be determined by the scope of work that you wish to complete using your Grant. Your application must contain a rough scope of work.
                   </p>
               </label>
-                <input id="settings" type="checkbox">
               <input id="faq-f" type="checkbox">
               <label for="faq-f">
-                <p class="faq-heading">Question number 6?</p>
+                <p class="faq-heading">What licenses are accepted?</p>
                 <div class="faq-arrow"></div>
                   <p class="faq-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium vel ante a porta. Aliquam pellentesque leo non ex pulvinar tincidunt. Maecenas elit elit, commodo at ultricies eu, euismod sit amet nisi. Pellentesque accumsan neque nisi, vel efficitur urna pellentesque vitae. Aenean quis consequat metus. Sed eget metus velit. Sed euismod tempus ligula sed viverra. Aenean dapibus finibus arcu nec posuere. Suspendisse potenti.
+                    Projects should generally be released publicly under a license that is either a free software license according to the <a href="https://www.fsf.org" title="FSF's website" target="_blank" class="text-green-700 underline">FSF</a> or an open source license according to the <a href="https://opensource.org" title="OSI's website"  class="text-green-700 underline" target="_blank">OSI</a>.
+                  </p>
+              </label>
+              <input id="faq-g" type="checkbox">
+              <label for="faq-g">
+                <p class="faq-heading">Who can apply?</p>
+                <div class="faq-arrow"></div>
+                  <p class="faq-text">
+                    Generally any person with technical development skills or expertise can apply. Individuals and entities on the SDN list, other sanctions lists, or who RippleX is otherwise legally prohibited from engaging are not eligible to receive funding.
+                  </p>
+              </label>
+              <input id="faq-h" type="checkbox">
+              <label for="faq-h">
+                <p class="faq-heading">What about taxes?</p>
+                <div class="faq-arrow"></div>
+                  <p class="faq-text">
+                    Recipients are responsible for determining the tax implications of receiving an award, based on their respective countries’ tax laws and compliance requirements. Amounts applied for should be sized such that any tax or other liability that will be incurred is accounted for. We reserve the right to use different payment mechanisms or tax characterizations for different awards in the program based on a number of factors specific to each award.
+                  </p>
+              </label>
+              <input id="faq-i" type="checkbox">
+              <label for="faq-i">
+                <p class="faq-heading">How can I learn more? Is there someone I can talk to about my project idea?</p>
+                <div class="faq-arrow"></div>
+                  <p class="faq-text">
+                     We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href="mailto: grants@xrpl.app" title="email grants@xrpl.app" class="text-green-700">grants@xrpl.app</a>
                   </p>
               </label>
             </div>
