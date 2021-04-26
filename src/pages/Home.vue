@@ -6,10 +6,10 @@
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p class="uppercase tracking-loose w-full">Accelerating the Internet of Value</p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
-            XRPL Developer Grants Program
+            XRP Ledger App Grants
           </h1>
           <p class="leading-normal text-2xl mb-8">
-            Some text will go here
+            Supporting software developers building on the XRP Ledger
           </p>
           <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Apply
