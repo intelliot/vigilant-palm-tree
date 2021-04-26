@@ -38,14 +38,17 @@ yarn test:e2e
 yarn test:all
 ```
 
-## Deploying to Github Pages
+## Deploying to GitHub Pages
 
-After building, this command will push the files inside the `dist` folder to Github so the content is displayed in Github Pages:
+Use `yarn build` to build the files into the `dist` folder.
+
+Use `yarn deploy:ghp` to push the files inside the `dist` folder to GitHub Pages, the web hosting service.
 
 ```bash
+yarn build
 yarn deploy:ghp
 ```
 
-## Github Pages site
+## GitHub Pages site
 
 TBD
