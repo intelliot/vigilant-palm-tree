@@ -46,22 +46,6 @@
             <li class="mr-3">
               <router-link
                 class="inline-block text-white no-underline py-2 px-4"
-                :class="currentRouteName === 'xrpledger' ? 'font-bold' : ''"
-                to="/xrp-ledger"
-                >The XRP Ledger</router-link
-              >
-            </li>
-            <li class="mr-3">
-              <router-link
-                class="inline-block text-white no-underline py-2 px-4"
-                :class="currentRouteName === 'developers' ? 'font-bold' : ''"
-                to="/developers"
-                >Developers</router-link
-              >
-            </li>
-            <li class="mr-3">
-              <router-link
-                class="inline-block text-white no-underline py-2 px-4"
                 :class="currentRouteName === 'faq' ? 'font-bold' : ''"
                 to="/faq"
                 >FAQ</router-link
