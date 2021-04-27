@@ -5,7 +5,7 @@
   "author": "Javi <javi@ripple.com>",
   "license": "MIT",
   "scripts": {
-    "build": "genversion lib/version.js && vue-cli-service build",
+    "build": "genversion lib/version.js && vue-cli-service build && cp dist/index.html dist/404.html",
     "lint": "vue-cli-service lint",
     "changelog": "conventional-changelog --config ./commits.config.js -i CHANGELOG.md -s",
     "changelog:all": "conventional-changelog --config ./commits.config.js -i CHANGELOG.md -s -r 0",

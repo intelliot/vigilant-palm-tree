@@ -1,14 +1,14 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
 import { setPageTitleMiddleware } from './middlewares'
 import { routes } from './routes'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-const router = new Router({
+const router = new VueRouter({
   linkActiveClass: 'is-active',
-  mode: 'hash',
+  mode: 'history',
   routes
 })
 
