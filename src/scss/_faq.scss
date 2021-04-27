@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 23px;
   padding-top: 10px;
-  -webkit-transition: text-indent 0.2s;
+  -webkit-transition: text-indent 0.1s;
   text-indent: 20px;
   color: #333;
 }
@@ -45,10 +45,10 @@
 .faq .faq-arrow {
   width: 10px;
   height: 10px;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  -webkit-transition-timing-function: ease-in;
   border-top: 2px solid rgba(0, 0, 0, 0.33);
   border-right: 2px solid rgba(0, 0, 0, 0.33);
   float: right;
@@ -60,10 +60,10 @@
 }
 
  .faq input[type="checkbox"]:checked + label > .faq-arrow {
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  -webkit-transition-timing-function: ease-in;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
@@ -72,15 +72,15 @@
   background: rgba(255,255,255,255) !important;
   color: #4f7351;
   height: 225px;
-  transition: height 0.8s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: height 0.1s;
+  -webkit-transition-timing-function: ease-in;
 }
 
  .faq input[type='checkbox']:not(:checked) + label {
   display: block;
-  transition: height 0.8s;
+  transition: height 0.1s;
   height: 60px;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition-timing-function: ease-in;
 }
 
 ::-webkit-scrollbar {

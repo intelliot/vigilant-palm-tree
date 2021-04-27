@@ -70,7 +70,7 @@ input[type=button], button {
 
 // routes transition animation
 .fade-enter-active {
-  transition: opacity .8s
+  transition: opacity 0s
 }
 .fade-enter, .fade-leave-to {
   opacity: 0
