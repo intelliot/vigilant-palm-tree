@@ -4,15 +4,15 @@
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">Accelerating the Internet of Value</p>
+          <p class="uppercase tracking-loose w-full">{{ $t('home.hero.subtitle') }}</p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
-            XRP Ledger App Grants
+            {{ $t('home.hero.title') }}
           </h1>
           <p class="leading-normal text-2xl mb-8">
-            Supporting software developers building on the XRP Ledger
+            {{ $t('home.hero.text') }}
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-            Apply starting on May 12, 2021
+          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
+            {{ $t('home.hero.action') }}
           </button>
         </div>
         <!--Right Col-->
@@ -43,7 +43,7 @@
     <section class="bg-white border-b py-8">
       <div class="container max-w-5xl mx-auto m-8">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Supporting Open Source XRPL Projects
+          {{ $t('home.main.title') }}
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -51,15 +51,9 @@
         <div class="flex flex-wrap">
           <div class="w-5/6 sm:w-1/2 p-6">
             <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Growing the XRP Ledger ecosystem
+              {{ $t('home.main.content.first.title') }}
             </h3>
-            <p class="text-gray-600 mb-8">
-              The XRP Ledger is an open, decentralized, permissionless public blockchain. XRPL App Grants funds blockchain technology projects that advance the growing XRP Ledger ecosystem. Some key areas include core infrastructure, developer tooling, developer UX, security, and consumer use cases. We fund both core technology and end-user applications. The first round of grants will be open to applicants from May 12 until June 9, 2021.
-              <br />
-              <br />
-
-              Winning proposals will be selected by June 23, 2021.
-            </p>
+            <p class="text-gray-600 mb-8 text-xl" v-html="$t('home.main.content.first.text')"></p>
           </div>
           <div class="w-full sm:w-1/2 p-6">
             <svg class="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
@@ -342,17 +336,9 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Application Process
+                {{ $t('home.main.content.second.title') }}
               </h3>
-              <p class="text-gray-600 mb-8">
-                <strong>Step 1:</strong> Submit your Grants Application.<br />
-                <strong>Step 2:</strong> Interviews with finalists.<br />
-                <strong>Step 3:</strong> Acceptance notifications.<br />
-                <strong>Step 4:</strong> Grantee onboarding, milestone setting, and mentor matching.<br />
-                <strong>Step 5:</strong> Grant round completion and concluding interviews.<br />
-                <br />
-                The entire Grants process is simple, efficient, and respectful of your time. Thank you for taking the time to apply!
-              </p>
+              <p class="text-gray-600 mb-8 text-xl" v-html="$t('home.main.content.second.text')"></p>
             </div>
           </div>
         </div>
@@ -361,80 +347,67 @@
     <section class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          More Details
+          {{ $t('home.more.title') }}
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                The XRP Ledger
+            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                {{ $t('home.more.content.first.subtitle') }}
               </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                A high-performance permissionless blockchain
+              <div class="w-full font-bold text-2xl text-gray-800 px-6">
+                {{ $t('home.more.content.first.title') }}
               </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                 The XRP Ledger is an open source, permissionless, decentralized blockchain that was created in 2012. It powers the digital asset XRP, which is a digital asset and cryptocurrency.
-              </p>
-            </a>
+              <p class="text-gray-800 text-xl px-6 mb-5" v-html="$t('home.more.content.first.text')"></p>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-start">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-                Learn about the XRP Ledger
-              </button>
+              <a :href="$t('home.more.content.first.link')" target="_blank" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
+                {{ $t('home.more.content.first.action') }}
+              </a>
             </div>
           </div>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                Developers
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Securely move any form of value
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                By building on the XRP Ledger, developers can easily and securely integrate payments, cryptocurrencies, non-fungible tokens (NFTs), and other forms of value into their applications.
-              </p>
-            </a>
+            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+              {{ $t('home.more.content.second.subtitle') }}
+            </p>
+            <div class="w-full font-bold text-2xl text-gray-800 px-6">
+              {{ $t('home.more.content.second.title') }}
+            </div>
+            <p class="text-gray-800 text-xl px-6 mb-5" v-html="$t('home.more.content.second.text')"></p>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-center">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-                Technical Documentation
-              </button>
+              <a :href="$t('home.more.content.second.link')" target="_blank" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
+                {{ $t('home.more.content.second.action') }}
+              </a>
             </div>
           </div>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                FAQ
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Frequently Asked Questions
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                When is the application deadline? What is the range of award amounts? Learn more in the FAQ.
-              </p>
-            </a>
+            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+              {{ $t('home.more.content.third.subtitle') }}
+            </p>
+            <div class="w-full font-bold text-2xl text-gray-800 px-6">
+              {{ $t('home.more.content.third.title') }}
+            </div>
+            <p class="text-gray-800 text-xl px-6 mb-5" v-html="$t('home.more.content.second.text')"></p>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-end">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-                View Frequently Asked Questions
-              </button>
+              <a :href="$t('home.more.content.third.link')" target="_blank" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
+                {{ $t('home.more.content.third.action') }}
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Change the colour #f8fafc to match the previous section colour -->
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
@@ -458,16 +431,16 @@
     </svg>
     <section class="container mx-auto text-center py-6 mb-12">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        Apply Today
+        {{ $t('home.bottom.title') }}
       </h1>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
       <h3 class="my-4 text-3xl leading-tight">
-        All software developers are invited to apply
+        {{ $t('home.bottom.text') }}
       </h3>
       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-        Apply Now
+        {{ $t('home.bottom.action') }}
       </button>
     </section>
   </div>

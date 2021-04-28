@@ -10,87 +10,23 @@
         </div>
         <div class="my-5 text-green-900">
           <button @click="expandAll" class="bg-transparent focus:outline-none hover:underline text-green-600 py-2">
-            Expand All
+            {{ $t('faq.expand') }}
           </button>
           <span class="mx-3 text-green-500">|</span>
           <button @click="collapseAll" class="bg-transparent focus:outline-none hover:underline text-green-600 py-2">
-            Collapse All
+            {{ $t('faq.collapse') }}
           </button>
         </div>
         <div class="flex flex-wrap">
             <div class="faq w-full">
-              <input id="faq-a" type="checkbox" :checked="checkAll">
-              <label for="faq-a">
-                <p class="faq-heading">When is the application deadline?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    May 31, 2021.
-                  </p>
-              </label>
-              <input id="faq-b" type="checkbox" :checked="checkAll">
-              <label for="faq-b">
-                <p class="faq-heading">What is the range of award amounts?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    While there is no set range, we intend to award between $10,000 and $200,000 per project. Awards of $150,000 and greater are typically for developers who have already successfully completed a project. In general, the larger the award, the more scrutiny the application will receive and the more questions the committee will have regarding how the money will be used. All projects must include a statement of work that helps the committee understand how the amount of funding requested was determined.
-                  </p>
-              </label>
-              <input id="faq-c" type="checkbox" :checked="checkAll">
-              <label for="faq-c">
-                <p class="faq-heading">How mature does a project need to be in order to apply for a Grant?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    We intend to fund projects that have at least a rudimentary prototype open-sourced on GitHub. The minimum is at least 4-8 hours of work (e.g. a minimum viable product or proof of concept created over a weekend). We will not fund projects that do not have at least some substantial open-source component.
-                  </p>
-              </label>
-              <input id="faq-d" type="checkbox" :checked="checkAll">
-              <label for="faq-d">
-                <p class="faq-heading">What types of open source projects will be considered?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    We are happy to consider any open source project, including but not limited to software, hardware, firmware, design, and networking projects. All projects must involve some amount of technical development.
-                  </p>
-              </label>
-              <input id="faq-e" type="checkbox" :checked="checkAll">
-              <label for="faq-e">
-                <p class="faq-heading">How should I determine what size of an award to apply for?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    The award amount you request should be determined by the scope of work that you wish to complete using your Grant. Your application must contain a rough scope of work.
-                  </p>
-              </label>
-              <input id="faq-f" type="checkbox" :checked="checkAll">
-              <label for="faq-f">
-                <p class="faq-heading">What licenses are accepted?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    Projects should generally be released publicly under a license that is either a free software license according to the <a href="https://www.fsf.org" title="FSF's website" target="_blank" class="text-green-700 underline">FSF</a> or an open source license according to the <a href="https://opensource.org" title="OSI's website"  class="text-green-700 underline" target="_blank">OSI</a>.
-                  </p>
-              </label>
-              <input id="faq-g" type="checkbox" :checked="checkAll">
-              <label for="faq-g">
-                <p class="faq-heading">Who can apply?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    Generally any person with technical development skills or expertise can apply. Individuals and entities on the SDN list, other sanctions lists, or who RippleX is otherwise legally prohibited from engaging are not eligible to receive funding.
-                  </p>
-              </label>
-              <input id="faq-h" type="checkbox" :checked="checkAll">
-              <label for="faq-h">
-                <p class="faq-heading">What about taxes?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                    Recipients are responsible for determining the tax implications of receiving an award, based on their respective countries’ tax laws and compliance requirements. Amounts applied for should be sized such that any tax or other liability that will be incurred is accounted for. We reserve the right to use different payment mechanisms or tax characterizations for different awards in the program based on a number of factors specific to each award.
-                  </p>
-              </label>
-              <input id="faq-i" type="checkbox" :checked="checkAll">
-              <label for="faq-i">
-                <p class="faq-heading">How can I learn more? Is there someone I can talk to about my project idea?</p>
-                <div class="faq-arrow"></div>
-                  <p class="faq-text">
-                     We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href="mailto: grants@xrpl.app" title="email grants@xrpl.app" class="text-green-700">grants@xrpl.app</a>
-                  </p>
-              </label>
+              <div v-for="(item, index) in faqContent" :key="item.q">
+                <input :id="`faq-${index}`" type="checkbox" :checked="checkAll">
+                <label :for="`faq-${index}`">
+                  <p class="faq-heading">{{ item.q }}</p>
+                  <div class="faq-arrow"></div>
+                    <p class="faq-text" v-html="item.a"></p>
+                </label>
+              </div>
             </div>
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
@@ -246,10 +182,10 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                XRPL App Grants
+                {{ $t('faq.subsection.title') }}
               </h3>
               <p class="text-gray-600 mb-8">
-                Supporting the open source ecosystem around the XRP Ledger in order to boost inclusive standards and innovation in the Internet of Value.
+                {{ $t('faq.subsection.text') }}
               </p>
             </div>
           </div>
@@ -261,6 +197,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import i18n from '@/i18n'
 
 @Component({
   name: 'FAQ',
@@ -269,9 +206,12 @@ import { Component, Vue } from 'vue-property-decorator'
 })
 export default class FAQ extends Vue {
   checkAll: boolean = false
+  faqContent: any = i18n.t('faq.content')
 
   created () {
-    //
+    this.$root.$on('locale-changed', (value: string) => {
+      this.faqContent = i18n.t('faq.content')
+    })
   }
 
   expandAll () {

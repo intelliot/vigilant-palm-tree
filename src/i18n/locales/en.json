@@ -1,1 +1,120 @@
-{}
+{
+  "language": {
+    "es": {
+        "button": "ES",
+        "title": "Spanish"
+    },
+    "en": {
+        "button": "EN",
+        "title": "English"
+    },
+    "jp": {
+      "button": "JP",
+      "title": "Japanese"
+    }
+  },
+  "header": {
+    "apply": "Apply Now",
+    "faq": "Frequently Asked Questions",
+    "title": "XRPL App Grants"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Accelerating the Internet of Value",
+      "title": "XRP Ledger App Grants",
+      "text": "Supporting software developers building on the XRP Ledger",
+      "action": "Apply starting on May 12, 2021"
+    },
+    "main": {
+      "title": "Supporting Open Source XRPL Projects",
+      "content": {
+        "first": {
+          "title": "Growing the XRP Ledger ecosystem",
+          "text": "The XRP Ledger is an open, decentralized, permissionless public blockchain. XRPL App Grants funds blockchain technology projects that advance the growing XRP Ledger ecosystem. Some key areas include core infrastructure, developer tooling, developer UX, security, and consumer use cases. We fund both core technology and end-user applications. The first round of grants will be open to applicants from May 12 until June 9, 2021.<br><br>Winning proposals will be selected by June 23, 2021."
+        },
+        "second": {
+          "title": "Application Process",
+          "text": "<ol><li><span class='font-bold'>Step 1:</span> Submit your Grants Application.</li><li><span class='font-bold'>Step 2:</span> Interviews with finalists.</li><li><span class='font-bold'>Step 3:</span> Acceptance notifications.</li><li><span class='font-bold'>Step 4:</span> Grantee onboarding, milestone setting, and mentor matching.</li><li><span class='font-bold'>Step 5:</span> Grant round completion and concluding interviews.</li></ol><br><br>The entire Grants process is simple, efficient, and respectful of your time. Thank you for taking the time to apply!"
+        }
+      }
+    },
+    "more": {
+      "title": "More Details",
+      "content": {
+        "first": {
+          "subtitle": "The XRP Ledger",
+          "title": "A high-performance permissionless blockchain",
+          "text": "The XRP Ledger is an open source, permissionless, decentralized blockchain that was created in 2012. It powers the digital asset XRP, which is a digital asset and cryptocurrency.",
+          "action": "Learn about the XRP Ledger",
+          "link": "https://xrpl.org/index.html"
+        },
+        "second": {
+          "subtitle": "Developers",
+          "title": "Securely move any form of value",
+          "text": "By building on the XRP Ledger, developers can easily and securely integrate payments, cryptocurrencies, non-fungible tokens (NFTs), and other forms of value into their applications.",
+          "action": "Technical Documentation",
+          "link": "https://xrpl.org/docs.html"
+        },
+        "third": {
+          "subtitle": "FAQ",
+          "title": "Frequently Asked Questions",
+          "text": "When is the application deadline? What is the range of award amounts? Learn more in the FAQ.",
+          "action": "View Frequently Asked Questions",
+          "link": "/faq"
+        }
+      }
+    },
+    "bottom": {
+      "title": "Frequently Asked Questions",
+      "text": "When is the application deadline? What is the range of award amounts? Learn more in the FAQ.",
+      "action": "View Frequently Asked Questions",
+      "link": "/faq"
+    }
+  },
+  "faq": {
+    "expand": "Expand All",
+    "collapse": "Collapse All",
+    "content": [
+      {
+        "q": "When is the application deadline?",
+        "a": "May 31, 2021."
+      },
+      {
+        "q": "What is the range of award amounts?",
+        "a": "While there is no set range, we intend to award between $10,000 and $200,000 per project. Awards of $150,000 and greater are typically for developers who have already successfully completed a project. In general, the larger the award, the more scrutiny the application will receive and the more questions the committee will have regarding how the money will be used. All projects must include a statement of work that helps the committee understand how the amount of funding requested was determined."
+      },
+      {
+        "q": "How mature does a project need to be in order to apply for a Grant?",
+        "a": "We intend to fund projects that have at least a rudimentary prototype open-sourced on GitHub. The minimum is at least 4-8 hours of work (e.g. a minimum viable product or proof of concept created over a weekend). We will not fund projects that do not have at least some substantial open-source component."
+      },
+      {
+        "q": "What types of open source projects will be considered?",
+        "a": "We are happy to consider any open source project, including but not limited to software, hardware, firmware, design, and networking projects. All projects must involve some amount of technical development."
+      },
+      {
+        "q": "How should I determine what size of an award to apply for?",
+        "a": "The award amount you request should be determined by the scope of work that you wish to complete using your Grant. Your application must contain a rough scope of work."
+      },
+      {
+        "q": "What licenses are accepted?",
+        "a": "Projects should generally be released publicly under a license that is either a free software license according to the <a href='https://www.fsf.org' title='FSF website' target='_blank' class='text-green-700 underline'>FSF</a> or an open source license according to the <a href='https://opensource.org' title='OSI website'  class='text-green-700 underline' target='_blank'>OSI</a>."
+      },
+      {
+        "q": "Who can apply?",
+        "a": "Generally any person with technical development skills or expertise can apply. Individuals and entities on the SDN list, other sanctions lists, or who RippleX is otherwise legally prohibited from engaging are not eligible to receive funding."
+      },
+      {
+        "q": "What about taxes?",
+        "a": "Recipients are responsible for determining the tax implications of receiving an award, based on their respective countries’ tax laws and compliance requirements. Amounts applied for should be sized such that any tax or other liability that will be incurred is accounted for. We reserve the right to use different payment mechanisms or tax characterizations for different awards in the program based on a number of factors specific to each award."
+      },
+      {
+        "q": "How can I learn more? Is there someone I can talk to about my project idea?",
+        "a": "We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href='mailto: grants@xrpl.app' title='email grants@xrpl.app' class='text-green-700'>grants@xrpl.app</a>"
+      }
+    ],
+    "subsection": {
+      "title": "XRPL App Grants",
+      "text": "Supporting the open source ecosystem around the XRP Ledger in order to boost inclusive standards and innovation in the Internet of Value."
+    }
+  }
+}

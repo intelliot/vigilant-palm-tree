@@ -1,1 +1,120 @@
-{}
+{
+  "language": {
+    "es": {
+      "button": "ES",
+      "title": "Español"
+    },
+    "en": {
+        "button": "EN",
+        "title": "Inglés"
+    },
+    "jp": {
+      "button": "JP",
+      "title": "Japonés"
+    }
+  },
+  "header": {
+    "apply": "Solicita Ahora",
+    "faq": "Preguntas Frecuentes",
+    "title": "Ayudas a Aplicaciones XRPL"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Acelerando el Internet del Valor",
+      "title": "Ayudas a Aplicaciones XRPL",
+      "text": "Apoyar a los desarrolladores de software que se utilicen en XRP Ledger",
+      "action": "Solicita a partir del 12 de mayo de 2021"
+    },
+    "main": {
+      "title": "Apoyo a proyectos XRPL de código abierto",
+      "content": {
+        "first": {
+          "title": "Ayudando al crecimiento del ecosistema del XRP Ledger",
+          "text": "El XRP Ledger es un Blockchain público abierto y descentralizado. Las Ayudas a Aplicaciones XRPL financia proyectos de tecnología Blockchain que hagan avanzar el creciente ecosistema de XRP Ledger. Algunas áreas clave incluyen infraestructura central, herramientas para desarrolladores, UX para desarrolladores, seguridad y casos de uso de consumidores. Financiamos tanto la tecnología central como las aplicaciones para el usuario final. La primera ronda de ayudas estará abierta a los solicitantes desde el 12 de mayo hasta el 9 de junio de 2021. <br> <br> Las propuestas ganadoras se seleccionarán antes del 23 de junio de 2021."
+        },
+        "second": {
+          "title": "Proceso de Solicitud",
+          "text": "<ol> <li> <span class = 'font-bold'> Paso 1: </span> Envía tu solicitud. </li> <li> <span class = 'font-bold'> Paso 2: </span> Entrevistas con finalistas. </li> <li> <span class = 'font-bold'> Paso 3: </span> Notificaciones de aceptación. </li> <li> <span class = 'font-bold'> Paso 4: </span> Incorporación de beneficiarios, establecimiento de hitos y emparejamiento con mentores. </li> <li> <span class = 'font-bold'> Paso 5: </span> Finalización y entrevistas finales. </ li> </ol> <br> <br> Todo el proceso de ayudas es sencillo, eficiente y respetuoso con tu tiempo. ¡Gracias por tomarte el tiempo para presentar tu solicitud!"
+        }
+      }
+    },
+    "more": {
+      "title": "Más detalles",
+      "content": {
+        "first": {
+          "subtitle": "El XRP Ledger",
+          "title": "Un Blockchain abierto y de alto rendimiento",
+          "text": "El XRP Ledger es un Blockchain descentralizado y de código abierto que se creó en 2012. Su activo digital nativo es el XRP.",
+          "action": "Más información sobre el XRP Ledger",
+          "link": "https://xrpl.org/index.html"
+        },
+        "second": {
+          "subtitle": "Desarrolladores",
+          "title": "Mueve de forma segura cualquier forma de valor",
+          "text": "Al utilizar el XRP Ledger, los desarrolladores pueden integrar de manera fácil y segura pagos, criptomonedas, tokens no fungibles (NFT) y otras formas de valor en sus aplicaciones.",
+          "action": "Documentación técnica",
+          "link": "https://xrpl.org/docs.html"
+        },
+        "third": {
+          "subtitle": "FAQ",
+          "title": "Preguntas frecuentes",
+          "text": "¿Cuándo es la fecha limite para aplicar? ¿Cuál es el rango de montos de premios? Obtén más información en las Preguntas Frecuentes.",
+          "action": "Ver preguntas frecuentes",
+          "link": "/faq"
+        }
+      }
+    },
+    "bottom": {
+      "title": "Ver preguntas frecuentes",
+      "text": "¿Cuándo es la fecha limite para aplicar? ¿Cuál es el rango de montos de premios? Obtén más información en las Preguntas Frecuentes.",
+      "action": "Ver preguntas frecuentes",
+      "link": "/faq"
+    }
+  },
+  "faq": {
+    "expand": "Expand All",
+    "collapse": "Collapse All",
+    "content": [
+      {
+        "q": "¿Cuándo es la fecha límite para solicitar tu ayuda?",
+        "a": "31 de Mayo de 2021."
+      },
+      {
+        "q": "¿Qué cantidades se van a otorgar?",
+        "a": "Aunque no hay un rango fijo, nuestra intención es otorgar ayudas entre $10,000 y $200,000 por proyecto. Ayudas por encima de $150,000 son normalmente para desarrolladores que han completado un proyecto exitosamente. En general, cuanto más grande es la ayuda mayor será el análisis del proyecto y mayor el número de preguntas del comité sobre comó será utilizado el dinero de la ayuda. Todos los proyectos deben incluir una de Declaración de Trabajo que ayude al comité a entender cómo se calculó la cantidad de ayuda pedida."
+      },
+      {
+        "q": "¿Qué grado de madurez debe tener un proyecto para solicitar una Ayuda?",
+        "a": "Nuestra intención es la de de financiar proyectos que tengan al menos un prototipo de código abierto en GitHub. El mínimo es de al menos 4-8 horas de trabajo (por ejemplo, un producto mínimo viable o una prueba de concepto creada durante un fin de semana). No financiaremos proyectos que no tengan al menos algún componente sustancial de código abierto."
+      },
+      {
+        "q": "¿Qué tipo de proyectos de código abierto se considerarán?",
+        "a": "Consideraremos en principiop cualquier proyecto de código abierto; incluidos, entre otros, proyectos de software, hardware, firmware, diseño y redes. Todos los proyectos deben involucrar cierto grado de desarrollo técnico."
+      },
+      {
+        "q": "¿Cómo debo determinar qué cantidad de ayuda debo solicitar?",
+        "a": "El monto de la ayuda que solicites debe estar determinado por el alcance del trabajo que deseas completar con ella. Tu formulario de petición debe contener un alcance de trabajo aproximado."
+      },
+      {
+        "q": "¿Qué tipos licencias se aceptan?",
+        "a": "Los proyectos generalmente deben publicarse bajo una licencia que sea de software libre de acuerdo con <a href = 'https: //www.fsf.org' title = 'FSF website' target = '_ blank' class = 'text- green-700 underline '> FSF </a> o una licencia de código abierto de acuerdo con <a href =' https: //opensource.org 'title =' sitio web OSI 'class =' ​​text-green-700 underline 'target = '_blank'> OSI </a>."
+      },
+      {
+        "q": "¿Quién puede solicitar ayudas?",
+        "a": "En general, puede postularse cualquier persona con habilidades o experiencia en desarrollo técnico. Las personas y entidades en la lista SDN, otras listas de sanciones o a quienes RippleX tiene prohibido legalmente participar no son elegibles para recibir fondos."
+      },
+      {
+        "q": "¿Y los impuestos?",
+        "a": "Los destinatarios son responsables de determinar las implicaciones fiscales de recibir un premio, según las leyes fiscales y los requisitos de cumplimiento de sus respectivos países. Los montos solicitados deben dimensionarse de manera que se contabilice cualquier impuesto u otro pasivo en el que se incurra. Nos reservamos el derecho de utilizar diferentes mecanismos de pago o caracterizaciones fiscales para diferentes ayudas en el programa en función de una serie de factores específicos de cada una."
+      },
+      {
+        "q": "¿Cómo puedo obtener más información o hablar sobre la idea de mi proyecto?",
+        "a": "Nos encantaría hablar contigo sobre la idea de tu proyecto o responder cualquier pregunta que puedas tener. Comunícate con nosotros en <a href='mailto: grant@xrpl.app' title='email grant@xrpl.app' class='text-green-700'> grant@xrpl.app </a>"
+      }
+    ],
+    "subsection": {
+      "title": "Ayudas a Aplicaciones XRPL",
+      "text": "Apoyando el ecosistema de código abierto en torno al XRP Ledger para impulsar los estándares inclusivos y la innovación en el Internet del Valor."
+    }
+  }
+}

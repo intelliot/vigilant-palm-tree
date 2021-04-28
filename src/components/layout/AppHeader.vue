@@ -18,7 +18,7 @@
               class="float-left"
               width="35"
             />
-            <span class="ml-3">XRPL App Grants</span>
+            <span class="ml-3">{{ $t('header.title') }}</span>
           </router-link>
         </div>
         <div class="block lg:hidden pr-4">
@@ -41,29 +41,31 @@
           id="nav-content"
         >
           <ul class="text-lg list-reset lg:flex justify-end flex-1 items-center">
-            <li class="ml-3">
-              <button title="Spanish" class="border-0 btn btn-default focus:outline-none text-gray-500">ES</button>
-            </li>
-            <li class="ml-3">
-              <button title="English" class="border-0 btn btn-default focus:outline-none text-gray-500">EN</button>
-            </li>
-            <li class="ml-3 mr-8">
-              <button title="Japanese" class="border-0 btn btn-default focus:outline-none text-gray-500">JP</button>
-            </li>
-            <li class="mr-8">
+            <li class="mr-8 ml-10">
               <router-link
                 class="inline-block text-white no-underline py-2 px-4"
                 :class="currentRouteName === 'faq' ? 'font-bold' : ''"
                 to="/faq"
-                >FAQ</router-link
+                >{{ $t('header.faq') }}</router-link
               >
             </li>
           </ul>
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            class="ml-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
-            Apply Now
+            {{ $t('header.apply') }}
           </button>
+          <ul class="text-lg list-reset lg:flex items-center">
+            <li class="ml-20">
+              <button :class="(currentLocale == 'en') ? 'text-white' : 'text-green-100'" @click="setLocale('en')" :title="$t('language.en.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.en.button') }}</button>
+            </li>
+            <li class="ml-3">
+              <button :class="(currentLocale == 'es') ? 'text-white' : 'text-green-100'" @click="setLocale('es')" :title="$t('language.es.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.es.button') }}</button>
+            </li>
+            <li class="ml-3">
+              <button :class="(currentLocale == 'jp') ? 'text-white' : 'text-green-100'" @click="setLocale('jp')" :title="$t('language.jp.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.jp.button') }}</button>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -72,6 +74,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import i18n from '../../i18n'
+import store from '../../store'
 
 @Component({
   name: 'AppHeader',
@@ -79,8 +83,17 @@ import { Component, Vue } from 'vue-property-decorator'
 })
 export default class AppHeader extends Vue {
   windowTop: number = 0
+  // currentLocale = store.getters.localStorageLocale
+  currentLocale = this.$store.getters.localStorageLocale || i18n.locale
   created () {
-    //
+    i18n.locale = this.currentLocale
+  }
+
+  setLocale (locale: string) {
+    this.currentLocale = locale
+    store.commit('saveLocale', locale)
+    i18n.locale = locale
+    this.$root.$emit('locale-changed', `${locale}`)
   }
 
   mounted () {

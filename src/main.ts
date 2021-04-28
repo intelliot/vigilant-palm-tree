@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 
 import './scss/style.scss'
 
@@ -16,5 +17,6 @@ new Vue({
   i18n,
   name: 'Root',
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
