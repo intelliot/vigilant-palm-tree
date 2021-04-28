@@ -34,7 +34,7 @@ import { Component, Vue } from 'vue-property-decorator'
   components: {
   }
 })
-export default class Step3 extends Vue {
+export default class XrplLedger extends Vue {
   created () {
     //
   }

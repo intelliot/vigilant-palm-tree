@@ -7,9 +7,7 @@
         windowTop > 10 || currentRouteName !== 'home' ? 'bg-dark-gray' : ''
       "
     >
-      <div
-        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
-      >
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 pt-2 flex items-center">
           <router-link
             class="toggleColour text-white no-underline hover:no-underline text-xl lg:text-2xl"
@@ -43,7 +41,16 @@
           id="nav-content"
         >
           <ul class="text-lg list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
+            <li class="ml-3">
+              <button title="Spanish" class="border-0 btn btn-default focus:outline-none text-gray-500">ES</button>
+            </li>
+            <li class="ml-3">
+              <button title="English" class="border-0 btn btn-default focus:outline-none text-gray-500">EN</button>
+            </li>
+            <li class="ml-3 mr-8">
+              <button title="Japanese" class="border-0 btn btn-default focus:outline-none text-gray-500">JP</button>
+            </li>
+            <li class="mr-8">
               <router-link
                 class="inline-block text-white no-underline py-2 px-4"
                 :class="currentRouteName === 'faq' ? 'font-bold' : ''"
