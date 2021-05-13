@@ -45,6 +45,7 @@ import i18n from '@/i18n'
   components: {
   }
 })
+
 export default class FAQ extends Vue {
   showAll: boolean = false
   faqContent: any = i18n.t('faq.content')
@@ -56,7 +57,8 @@ export default class FAQ extends Vue {
   }
 
   showFaq (index: number) {
-    this.$refs[`faq-${index}`][0].classList.toggle('hidden')
+    const element: any = this.$refs[`faq-${index}`]
+    element[0].classList.toggle('hidden')
   }
 
   expandAll () {
