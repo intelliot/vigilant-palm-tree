@@ -20,12 +20,12 @@
     <section class="bg-xblack">
       <div class="container w-full mx-auto m-8">
         <div class="md:flex">
-          <div class="p-6 md:max-w-md">
+          <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.first.title') }}
             </h3>
           </div>
-          <div class="md:w-2/3 sm:w-full p-6 md:flex">
+          <div class="md:w-2/3 sm:w-full p-2 md:flex">
             <div class="md:w-1/2 px-10">
               <p class="mb-8 text-md" v-html="$t('home.main.content.first.textLeft')"></p>
             </div>
@@ -35,12 +35,12 @@
           </div>
         </div>
         <div class="md:flex">
-          <div class="p-6 md:max-w-md">
+          <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.second.title') }}
             </h3>
           </div>
-          <div class="md:w-2/3 sm:w-full p-6 md:flex">
+          <div class="md:w-2/3 sm:w-full p-2 md:flex">
             <div class="md:w-1/2 px-10">
               <p class="mb-8 text-md" v-html="$t('home.main.content.second.textLeft')"></p>
             </div>
@@ -50,12 +50,12 @@
           </div>
         </div>
         <div class="md:flex">
-          <div class="p-6 md:max-w-md">
+          <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.third.title') }}
             </h3>
           </div>
-          <div class="w-full p-6">
+          <div class="md:w-2/3 sm:w-full p-2 md:flex">
             <div class="w-full px-10">
               <div class="mb-8 text-md">
                 <ol>
