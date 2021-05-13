@@ -7,10 +7,6 @@
     "en": {
         "button": "EN",
         "title": "Inglés"
-    },
-    "jp": {
-      "button": "JP",
-      "title": "Japonés"
     }
   },
   "header": {
@@ -20,16 +16,14 @@
   },
   "home": {
     "hero": {
-      "subtitle": "Acelerando el Internet del Valor",
-      "title": "Ayudas a Aplicaciones XRPL",
-      "text": "Apoyar a los desarrolladores de software que se utilicen en XRP Ledger",
-      "action": "Solicita a partir del 12 de mayo de 2021"
+      "title": "Ven y desarrolla en el XRP Ledger",
+      "text": "Solicita tu ayuda para desarrolladores de la comunidad para financiar tu proyecto en el XRP Ledger (XRPL).",
+      "action": "Solicita ahora"
     },
     "main": {
-      "title": "Apoyo a proyectos XRPL de código abierto",
       "content": {
         "first": {
-          "title": "Ayudando al crecimiento del ecosistema del XRP Ledger",
+          "title": "Sobre el programa de ayudas al XRPL",
           "text": "El XRP Ledger es un Blockchain público abierto y descentralizado. Las Ayudas a Aplicaciones XRPL financia proyectos de tecnología Blockchain que hagan avanzar el creciente ecosistema de XRP Ledger. Algunas áreas clave incluyen infraestructura central, herramientas para desarrolladores, UX para desarrolladores, seguridad y casos de uso de consumidores. Financiamos tanto la tecnología central como las aplicaciones para el usuario final. La primera ronda de ayudas estará abierta a los solicitantes desde el 12 de mayo hasta el 9 de junio de 2021. <br> <br> Las propuestas ganadoras se seleccionarán antes del 23 de junio de 2021."
         },
         "second": {

@@ -2,7 +2,7 @@
   <div class="flex pt-2">
     <nav
       id="header"
-      class="fixed w-full z-30 top-0 text-white"
+      class="fixed w-full z-30 top-0 text-white bg-xblack"
       :class="
         windowTop > 10 || currentRouteName !== 'home' ? 'bg-dark-gray' : ''
       "
@@ -13,18 +13,30 @@
             class="toggleColour text-white no-underline hover:no-underline text-xl lg:text-2xl"
             to="/"
           >
-            <img
-              src="/img/xrp-symbol-white.svg"
-              class="float-left"
-              width="35"
-            />
-            <span class="ml-3">{{ $t('header.title') }}</span>
+            <span class="font-bold">{{ $t('header.title') }}</span>
           </router-link>
+          <ul class="text-lg list-reset flex justify-end flex-1 items-center">
+            <li class="ml-16">
+              <router-link
+                class="inline-block text-white no-underline py-2 px-4"
+                :class="currentRouteName === 'about' ? 'font-bold' : ''"
+                to="/about"
+                >{{ $t('header.about') }}</router-link
+              >
+            <li class="ml-4">
+              <router-link
+                class="inline-block text-white no-underline py-2 px-4"
+                :class="currentRouteName === 'faq' ? 'font-bold' : ''"
+                to="/faq"
+                >{{ $t('header.faq') }}</router-link
+              >
+            </li>
+          </ul>
         </div>
         <div class="block lg:hidden pr-4">
           <button
             id="nav-toggle"
-            class="flex items-center p-1 text-green-100 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             <svg
               class="fill-current h-6 w-6"
@@ -37,33 +49,20 @@
           </button>
         </div>
         <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-green-600 lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
+          class="w-full lg:flex text-right lg:w-auto hidden mt-2 lg:mt-0 bg-xgray lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
-          <ul class="text-lg list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-8 ml-10">
-              <router-link
-                class="inline-block text-white no-underline py-2 px-4"
-                :class="currentRouteName === 'faq' ? 'font-bold' : ''"
-                to="/faq"
-                >{{ $t('header.faq') }}</router-link
-              >
-            </li>
-          </ul>
           <button
-            class="ml-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            class="ml-3 bg-xgreen hover:bg-xgreen-over font-bold py-2 px-4 rounded"
           >
             {{ $t('header.apply') }}
           </button>
           <ul class="text-lg list-reset lg:flex items-center">
-            <li class="ml-20">
+            <li class="md:ml-20">
               <button :class="(currentLocale == 'en') ? 'text-white' : 'text-green-100'" @click="setLocale('en')" :title="$t('language.en.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.en.button') }}</button>
             </li>
-            <li class="ml-3">
+            <li class="md:ml-3">
               <button :class="(currentLocale == 'es') ? 'text-white' : 'text-green-100'" @click="setLocale('es')" :title="$t('language.es.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.es.button') }}</button>
-            </li>
-            <li class="ml-3">
-              <button :class="(currentLocale == 'jp') ? 'text-white' : 'text-green-100'" @click="setLocale('jp')" :title="$t('language.jp.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.jp.button') }}</button>
             </li>
           </ul>
         </div>

@@ -1,7 +1,7 @@
 {
   "name": "xrpl-developer-program-website",
-  "version": "0.0.8",
-  "description": "XRPL App Grants Website",
+  "version": "0.1.0",
+  "description": "XRPL Grants Program Website",
   "author": "Javi <javi@ripple.com>",
   "license": "MIT",
   "scripts": {

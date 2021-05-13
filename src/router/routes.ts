@@ -1,6 +1,5 @@
 import homePage from '../pages/Home.vue'
-import developersPage from '../pages/Developers.vue'
-import xrpLedgerPage from '../pages/XrpLedger.vue'
+import aboutPage from '../pages/About.vue'
 import faqPage from '../pages/FAQ.vue'
 import notFoundPage from '../pages/NotFound.vue'
 
@@ -17,20 +16,11 @@ export const routes = [
     }
   },
   {
-    path: '/developers',
-    name: 'developers',
-    component: developersPage,
+    path: '/about',
+    name: 'about',
+    component: aboutPage,
     meta: {
-      title: `${DOMAIN_TITLE} | Developers`,
-      layout: 'app'
-    }
-  },
-  {
-    path: '/xrp-ledger',
-    name: 'xrpledger',
-    component: xrpLedgerPage,
-    meta: {
-      title: `${DOMAIN_TITLE} | XRP Ledger`,
+      title: `${DOMAIN_TITLE} | About`,
       layout: 'app'
     }
   },
