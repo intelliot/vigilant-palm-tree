@@ -24,7 +24,15 @@ a:hover {
 .xHeroBg {
     background: url(/img/hero.svg);
     background-size: fit;
-    background-position: -10%;
+
+    @include media_tablet {
+        background-position: -50% 30%;
+    }
+
+    @include media_mobile {
+        background-position: -50% 30%;
+    }
+    
 }
 
 .xBg {

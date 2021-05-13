@@ -49,7 +49,7 @@
           </button>
         </div>
         <div
-          class="w-full lg:flex text-right lg:w-auto hidden mt-2 lg:mt-0 bg-xgray lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
+          class="w-full lg:flex text-right lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
           <button
