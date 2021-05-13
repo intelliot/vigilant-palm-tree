@@ -35,7 +35,7 @@
           class="w-full lg:flex text-right lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
-          <ul class="text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
+          <ul class="md:absolute md:left-44 md:pt-1 text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
             <li class="md:ml-16">
               <router-link
                 class="inline-block text-white no-underline py-2 px-4"
