@@ -7,36 +7,19 @@
         windowTop > 10 || currentRouteName !== 'home' ? 'bg-dark-gray' : ''
       "
     >
-      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 pt-2 flex items-center">
+      <div class="w-full pl-4 md:pl-16 mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pt-2 flex items-center">
           <router-link
             class="toggleColour text-white no-underline hover:no-underline text-xl lg:text-2xl"
             to="/"
           >
             <span class="font-bold">{{ $t('header.title') }}</span>
           </router-link>
-          <ul class="text-lg list-reset flex justify-end flex-1 items-center">
-            <li class="ml-16">
-              <router-link
-                class="inline-block text-white no-underline py-2 px-4"
-                :class="currentRouteName === 'about' ? 'font-bold' : ''"
-                to="/about"
-                >{{ $t('header.about') }}</router-link
-              >
-            <li class="ml-4">
-              <router-link
-                class="inline-block text-white no-underline py-2 px-4"
-                :class="currentRouteName === 'faq' ? 'font-bold' : ''"
-                to="/faq"
-                >{{ $t('header.faq') }}</router-link
-              >
-            </li>
-          </ul>
         </div>
         <div class="block lg:hidden pr-4">
           <button
             id="nav-toggle"
-            class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out xmenu"
           >
             <svg
               class="fill-current h-6 w-6"
@@ -52,16 +35,34 @@
           class="w-full lg:flex text-right lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
+          <ul class="text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
+            <li class="md:ml-16">
+              <router-link
+                class="inline-block text-white no-underline py-2 px-4"
+                :class="currentRouteName === 'about' ? 'xbold underline text-xgreen' : ''"
+                to="/about"
+                >{{ $t('header.about') }}</router-link
+              >
+            <li class="md:ml-4">
+              <router-link
+                class="inline-block text-white no-underline py-2 px-4"
+                :class="currentRouteName === 'faq' ? 'xbold underline text-xgreen' : ''"
+                to="/faq"
+                >{{ $t('header.faq') }}</router-link
+              >
+            </li>
+          </ul>
           <button
             class="ml-3 bg-xgreen hover:bg-xgreen-over font-bold py-2 px-4 rounded"
           >
             {{ $t('header.apply') }}
           </button>
-          <ul class="text-lg list-reset lg:flex items-center">
-            <li class="md:ml-20">
+          <hr class="mt-2" />
+          <ul class="text-lg list-reset lg:flex md:items-center">
+            <li class="md:ml-4">
               <button :class="(currentLocale == 'en') ? 'text-white' : 'text-green-100'" @click="setLocale('en')" :title="$t('language.en.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.en.button') }}</button>
             </li>
-            <li class="md:ml-3">
+            <li class="md:mr-6 md:ml-4">
               <button :class="(currentLocale == 'es') ? 'text-white' : 'text-green-100'" @click="setLocale('es')" :title="$t('language.es.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.es.button') }}</button>
             </li>
           </ul>

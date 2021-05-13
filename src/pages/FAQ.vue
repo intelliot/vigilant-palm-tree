@@ -1,33 +1,34 @@
 <template>
   <div class="bg-xblack">
-    <section class="pt-24 xHeroBg">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
+    <section class="md:pt-24 xHeroBg">
+      <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 class="my-10 text-5xl pt-10 font-bold leading-tight">
+          <h1 class="md:ml-12 mt-10 text-5xl pt-10 font-bold leading-tight">
             {{ $t('faq.title') }}
           </h1>
         </div>
       </div>
     </section>
-    <section class="py-6">
-      <div class="container mx-auto px-4">
-        <div class="my-5">
-          <button @click="expandAll" class="bg-transparent focus:outline-none hover:underline text-white py-2">
+    <section class="md:py-6">
+      <div class="mx-auto px-4 md:px-12">
+        <div class="md:my-5">
+          <button @click="expandAll" class="bg-transparent focus:outline-none hover:underline py-2 link">
             {{ $t('faq.expand') }}
           </button>
           <span class="mx-3 text-white">|</span>
-          <button @click="collapseAll" class="bg-transparent focus:outline-none hover:underline text-white py-2">
+          <button @click="collapseAll" class="bg-transparent focus:outline-none hover:underline py-2 link">
             {{ $t('faq.collapse') }}
           </button>
         </div>
         <div class="faq w-full">
           <div v-for="(item, index) in faqContent" :key="item.q">
-            <input :id="`faq-${index}`" type="checkbox" :checked="checkAll">
-            <label :for="`faq-${index}`" class="rounded">
-              <p class="faq-heading break-all">{{ item.q }}</p>
-              <div class="faq-arrow"></div>
-              <p class="faq-text text-white" v-html="item.a"></p>
-            </label>
+            <div class="rounded mb-2" @click="showFaq(index)">
+              <label class="rounded">
+                <p class="faq-heading break-all">{{ item.q }}</p>
+                <div class="faq-arrow"></div>
+              </label>
+              <p :ref="`faq-${index}`" class="faq-text text-white" :class="showAll ? '' : 'hidden'" v-html="item.a"></p>
+            </div>
           </div>
         </div>
         </div>
@@ -45,7 +46,7 @@ import i18n from '@/i18n'
   }
 })
 export default class FAQ extends Vue {
-  checkAll: boolean = false
+  showAll: boolean = false
   faqContent: any = i18n.t('faq.content')
 
   created () {
@@ -54,12 +55,16 @@ export default class FAQ extends Vue {
     })
   }
 
+  showFaq (index: number) {
+    this.$refs[`faq-${index}`][0].classList.toggle('hidden')
+  }
+
   expandAll () {
-    this.checkAll = true
+    this.showAll = true
   }
 
   collapseAll () {
-    this.checkAll = false
+    this.showAll = false
   }
 }
 </script>

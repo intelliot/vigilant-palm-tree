@@ -17,22 +17,43 @@
     background: #23292F;
 }
 
-a:hover {
+a:hover, button.link:hover {
     text-decoration: underline;
+    color: #19FF83;
+}
+
+.active-xgreen:focus {
+    color:#19FF83;
+}
+
+.xmenu:focus {
+    color:#19FF83;
+}
+
+.xmenu {
+    color:#fff;
 }
 
 .xHeroBg {
     background: url(/img/hero.svg);
-    background-size: fit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55% 0%;
 
     @include media_tablet {
         background-position: -50% 30%;
     }
 
     @include media_mobile {
-        background-position: -50% 30%;
+        background-size: 100% 100%;
     }
     
+}
+
+.xHeroBgMobile {
+    @include media_mobile {
+        background: none;
+    }
 }
 
 .xBg {
@@ -58,6 +79,10 @@ a:hover {
 .pHero {
     padding-bottom: 120px;
     padding-top: 60px;
+
+    @include media_mobile {
+        padding-bottom: 30px;
+    }
 }
 
 .bg-xgreen {
@@ -79,3 +104,12 @@ a:hover {
 .text-xblack {
     color: #1D1D1D;
 }
+
+.xbold {
+    font-family: 'Archia Bold';
+}
+
+.underline {
+    text-decoration: underline;
+}
+

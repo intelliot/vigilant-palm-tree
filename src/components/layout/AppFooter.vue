@@ -1,9 +1,9 @@
 <template>
   <!--Footer-->
   <footer class="bg-xblack">
-    <section class="py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+    <section class="md:py-8">
+      <div class="md:pl-4 mx-auto flex flex-wrap pt-4 pb-12">
+        <div class="w-full md:w-1/3 md:p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 text-white">
               <h4 class="w-full font-bold text-3xl px-6">
                 {{ $t('home.bottom.content.first.title') }}
@@ -15,7 +15,7 @@
             <img src="/img/ripplex_logo.svg" class="mt-2" alt="Logo: RippleX" title="Logo RippleX">
           </div>
         </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full md:w-1/3 md:p-6 mt-10 md:mt-0 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 text-white">
             <label for="email" class="w-full font-bold text-3xl px-6 block">
               {{ $t('home.bottom.content.second.title') }}
@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full md:w-1/3 md:p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1">
             <h4 class="w-full font-bold text-3xl px-6">
               {{ $t('home.bottom.content.third.title') }}
@@ -42,7 +42,7 @@
         </div>
       </div>
     </section>
-    <div class="container mx-auto px-8">
+    <div class="pl-24 mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6">
           <div class="text-gray-600 ml-1 mt-8">v{{ version }}</div>

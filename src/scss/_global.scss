@@ -1,3 +1,17 @@
+@font-face{
+  font-family:"Archia Regular";
+  src:url("/css/fonts/archia-regular-webfont.woff") format("woff"),
+  url("/css/fonts/archia-regular-webfont.woff") format("opentype"),
+  url("/css/fonts/archia-regular-webfont.woff") format("truetype");
+}
+
+@font-face{
+  font-family:"Archia Bold";
+  src:url("/css/fonts/archia-bold-webfont.woff") format("woff"),
+  url("/css/fonts/archia-bold-webfont.woff") format("opentype"),
+  url("/css/fonts/archia-bold-webfont.woff") format("truetype");
+}
+
 html, body, #app {
   min-height: 100vh;
 }
@@ -5,7 +19,7 @@ html, body, #app {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Archia Regular', 'Source Sans Pro', sans-serif;
 }
 
 #app {
@@ -25,12 +39,6 @@ img {
 input[type=button], button {
   padding: 0;
 }
-
-//.page {
-//  height: 100%;
-//  width: 100%;
-//  background-color: green;
-//}
 
 .clearfix::after {
   display: table;
