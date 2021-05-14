@@ -7,8 +7,8 @@
         windowTop > 10 || currentRouteName !== 'home' ? 'bg-dark-gray' : ''
       "
     >
-      <div class="w-full pl-4 md:pl-16 mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pt-2 flex items-center">
+      <div class="w-full pl-4 md:pl-16 mx-auto flex flex-wrap items-center justify-between mt-0">
+        <div class="flex items-center">
           <router-link
             class="toggleColour text-white no-underline hover:no-underline text-xl lg:text-2xl"
             to="/"
@@ -35,7 +35,7 @@
           class="w-full lg:flex lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black md:p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
-          <ul class="md:absolute md:left-44 md:pt-1 text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
+          <ul class="md:absolute md:left-44 md:pt-2 text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
             <li class="md:ml-16">
               <router-link
                 class="inline-block text-white no-underline py-2 md:px-4"
