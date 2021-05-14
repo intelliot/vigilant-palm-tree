@@ -16,9 +16,5 @@ export default class App extends Vue {
   get layout (): string {
     return (this.$route.meta.layout || defaultLayout) + '-layout'
   }
-  
-  created () {
-    //
-  }
 }
 </script>
