@@ -32,20 +32,20 @@
           </button>
         </div>
         <div
-          class="w-full lg:flex text-right lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded-md"
+          class="w-full lg:flex lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black md:p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
           <ul class="md:absolute md:left-44 md:pt-1 text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
             <li class="md:ml-16">
               <router-link
-                class="inline-block text-white no-underline py-2 px-4"
+                class="inline-block text-white no-underline py-2 md:px-4"
                 :class="currentRouteName === 'about' ? 'xbold underline text-xgreen' : ''"
                 to="/about"
                 >{{ $t('header.about') }}</router-link
               >
             <li class="md:ml-4">
               <router-link
-                class="inline-block text-white no-underline py-2 px-4"
+                class="inline-block text-white no-underline py-2 md:px-4"
                 :class="currentRouteName === 'faq' ? 'xbold underline text-xgreen' : ''"
                 to="/faq"
                 >{{ $t('header.faq') }}</router-link
@@ -53,19 +53,24 @@
             </li>
           </ul>
           <button
-            class="ml-3 bg-xgreen hover:bg-xgreen-over font-bold py-2 px-4 rounded"
+            class="my-2 md:ml-3 bg-xgreen hover:bg-xgreen-over font-bold py-2 px-4 rounded"
           >
             {{ $t('header.apply') }}
           </button>
           <hr class="mt-2" />
-          <ul class="text-lg list-reset lg:flex md:items-center">
-            <li class="md:ml-4">
-              <button :class="(currentLocale == 'en') ? 'text-white' : 'text-green-100'" @click="setLocale('en')" :title="$t('language.en.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.en.button') }}</button>
-            </li>
-            <li class="md:mr-6 md:ml-4">
-              <button :class="(currentLocale == 'es') ? 'text-white' : 'text-green-100'" @click="setLocale('es')" :title="$t('language.es.title')" class="border-0 btn btn-default focus:outline-none">{{ $t('language.es.button') }}</button>
-            </li>
-          </ul>
+          <div class="relative md:ml-14 pt-2 md:pt-4 md:mr-10">
+            <label @click="showLangMenu()" for="languagebox" class="md:flex md:items-center md:space-x-1 cursor-pointer">
+              <span class="text-white">{{ $t(`language.${currentLocale}.title`) }}</span>
+              <img src="/img/down_arrow.svg" class="inline pt-2 md:pt-0" alt="" title="">
+            </label>
+            <div v-if="langMenuDisplayed" class="md:absolute mt-1 md:right-0.5 md:top-full md:min-w-max rounded bg-xblack transition delay-75 ease-in-out z-10">
+                <ul class="block text-white p-0 m-0">
+                  <li class="mb-2"><button @click="setLocale('en')" :title="$t('language.en.title')" class="lang border-0 btn btn-default focus:outline-none">{{ $t('language.en.title') }}</button></li>
+                  <li class="mb-2"><button @click="setLocale('es')" :title="$t('language.es.title')" class="lang border-0 btn btn-default focus:outline-none">{{ $t('language.es.title') }}</button></li>
+                </ul>
+            </div>
+          </div>
+          <hr class="mt-2" />
         </div>
       </div>
     </nav>
@@ -83,7 +88,7 @@ import store from '../../store'
 })
 export default class AppHeader extends Vue {
   windowTop: number = 0
-  // currentLocale = store.getters.localStorageLocale
+  langMenuDisplayed: boolean = false
   currentLocale = this.$store.getters.localStorageLocale || i18n.locale
   created () {
     i18n.locale = this.currentLocale
@@ -94,6 +99,7 @@ export default class AppHeader extends Vue {
     store.commit('saveLocale', locale)
     i18n.locale = locale
     this.$root.$emit('locale-changed', `${locale}`)
+    this.langMenuDisplayed = false
   }
 
   mounted () {
@@ -106,6 +112,10 @@ export default class AppHeader extends Vue {
 
   onScroll () {
     this.windowTop = window.top.scrollY
+  }
+
+  showLangMenu () {
+    this.langMenuDisplayed = !this.langMenuDisplayed
   }
 
   get currentRouteName () {

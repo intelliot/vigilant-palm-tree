@@ -152,7 +152,9 @@ import i18n from '@/i18n'
 export default class Home extends Vue {
   stepsContent: any = i18n.t('home.main.content.third.steps')
   created () {
-    //
+    this.$root.$on('locale-changed', (value: string) => {
+      this.stepsContent = i18n.t('home.main.content.third.steps')
+    })
   }
 }
 </script>

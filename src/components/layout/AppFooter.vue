@@ -42,7 +42,7 @@
         </div>
       </div>
     </section>
-    <div class="pl-24 mx-auto px-8">
+    <div class="mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6">
           <div class="text-gray-600 ml-1 mt-8">v{{ version }}</div>

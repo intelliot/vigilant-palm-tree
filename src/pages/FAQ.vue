@@ -27,7 +27,7 @@
                 <p class="faq-heading break-all">{{ item.q }}</p>
                 <div class="faq-arrow"></div>
               </label>
-              <p :ref="`faq-${index}`" class="faq-text text-white" :class="showAll ? '' : 'hidden'" v-html="item.a"></p>
+              <p class="faq-text text-white" :class="faqContent[index].displayed ? '' : 'hidden'" v-html="item.a"></p>
             </div>
           </div>
         </div>
@@ -47,7 +47,6 @@ import i18n from '@/i18n'
 })
 
 export default class FAQ extends Vue {
-  showAll: boolean = false
   faqContent: any = i18n.t('faq.content')
 
   created () {
@@ -57,16 +56,19 @@ export default class FAQ extends Vue {
   }
 
   showFaq (index: number) {
-    const element: any = this.$refs[`faq-${index}`]
-    element[0].classList.toggle('hidden')
+    this.faqContent[index].displayed = !this.faqContent[index].displayed
   }
 
   expandAll () {
-    this.showAll = true
+    for (const item of this.faqContent) {
+      item.displayed = true
+    }
   }
 
   collapseAll () {
-    this.showAll = false
+    for (const item of this.faqContent) {
+      item.displayed = false
+    }
   }
 }
 </script>

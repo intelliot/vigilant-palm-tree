@@ -2,15 +2,11 @@
   "language": {
     "es": {
         "button": "ES",
-        "title": "Spanish"
+        "title": "Español"
     },
     "en": {
         "button": "EN",
         "title": "English"
-    },
-    "jp": {
-      "button": "JP",
-      "title": "Japanese"
     }
   },
   "header": {
@@ -35,7 +31,7 @@
         "second": {
           "title": "First Round of Applications Now Open",
           "textLeft": "We will consider any project that builds on the XRP Ledger and involves some technical development. <br><br>Our focus area for the first round is to support the development of NFTs (Non-Fungible Tokens) on the XRP Ledger.",
-          "textRight": "If you are interested in this focus area,  see below for a few project ideas:<ul class='list-disc ml-8 mt-2'><li>An XRPL-based NFT Marketplace</li><li>An XRPL-based NFT Issuance platform (minting)</li><li>Wallet support for XRPL-based NFTs</li></ul>"
+          "textRight": "If you are interested in this focus area, see below for a few project ideas:<ul class='list-disc ml-8 mt-2'><li>An XRPL-based NFT Marketplace</li><li>An XRPL-based NFT Issuance platform (minting)</li><li>Wallet support for XRPL-based NFTs</li></ul>"
         },
         "third": {
           "title": "XRPL App Grants Application and Selection Process",
@@ -155,39 +151,48 @@
     "content": [
       {
         "q": "When is the application deadline?",
-        "a": "May 31, 2021."
+        "a": "May 31, 2021.",
+        "displayed": false
       },
       {
         "q": "What is the range of award amounts?",
-        "a": "While there is no set range, we intend to award between $10,000 and $200,000 per project. Awards of $150,000 and greater are typically for developers who have already successfully completed a project. In general, the larger the award, the more scrutiny the application will receive and the more questions the committee will have regarding how the money will be used. All projects must include a statement of work that helps the committee understand how the amount of funding requested was determined."
+        "a": "While there is no set range, we intend to award between $10,000 and $200,000 per project. Awards of $150,000 and greater are typically for developers who have already successfully completed a project. In general, the larger the award, the more scrutiny the application will receive and the more questions the committee will have regarding how the money will be used. All projects must include a statement of work that helps the committee understand how the amount of funding requested was determined.",
+        "displayed": false
       },
       {
         "q": "How mature does a project need to be in order to apply for a Grant?",
-        "a": "We intend to fund projects that have at least a rudimentary prototype open-sourced on GitHub. The minimum is at least 4-8 hours of work (e.g. a minimum viable product or proof of concept created over a weekend). We will not fund projects that do not have at least some substantial open-source component."
+        "a": "We intend to fund projects that have at least a rudimentary prototype open-sourced on GitHub. The minimum is at least 4-8 hours of work (e.g. a minimum viable product or proof of concept created over a weekend). We will not fund projects that do not have at least some substantial open-source component.",
+        "displayed": false
       },
       {
         "q": "What types of open source projects will be considered?",
-        "a": "We are happy to consider any open source project, including but not limited to software, hardware, firmware, design, and networking projects. All projects must involve some amount of technical development."
+        "a": "We are happy to consider any open source project, including but not limited to software, hardware, firmware, design, and networking projects. All projects must involve some amount of technical development.",
+        "displayed": false
       },
       {
         "q": "How should I determine what size of an award to apply for?",
-        "a": "The award amount you request should be determined by the scope of work that you wish to complete using your Grant. Your application must contain a rough scope of work."
+        "a": "The award amount you request should be determined by the scope of work that you wish to complete using your Grant. Your application must contain a rough scope of work.",
+        "displayed": false
       },
       {
         "q": "What licenses are accepted?",
-        "a": "Projects should generally be released publicly under a license that is either a free software license according to the <a href='https://www.fsf.org' title='FSF website' target='_blank' class='text-xgreen underline'>FSF</a> or an open source license according to the <a href='https://opensource.org' title='OSI website'  class='text-xgreen underline' target='_blank'>OSI</a>."
+        "a": "Projects should generally be released publicly under a license that is either a free software license according to the <a href='https://www.fsf.org' title='FSF website' target='_blank' class='text-xgreen underline'>FSF</a> or an open source license according to the <a href='https://opensource.org' title='OSI website'  class='text-xgreen underline' target='_blank'>OSI</a>.",
+        "displayed": false
       },
       {
         "q": "Who can apply?",
-        "a": "Generally any person with technical development skills or expertise can apply. Individuals and entities on the SDN list, other sanctions lists, or who RippleX is otherwise legally prohibited from engaging are not eligible to receive funding."
+        "a": "Generally any person with technical development skills or expertise can apply. Individuals and entities on the SDN list, other sanctions lists, or who RippleX is otherwise legally prohibited from engaging are not eligible to receive funding.",
+        "displayed": false
       },
       {
         "q": "What about taxes?",
-        "a": "Recipients are responsible for determining the tax implications of receiving an award, based on their respective countries’ tax laws and compliance requirements. Amounts applied for should be sized such that any tax or other liability that will be incurred is accounted for. We reserve the right to use different payment mechanisms or tax characterizations for different awards in the program based on a number of factors specific to each award."
+        "a": "Recipients are responsible for determining the tax implications of receiving an award, based on their respective countries’ tax laws and compliance requirements. Amounts applied for should be sized such that any tax or other liability that will be incurred is accounted for. We reserve the right to use different payment mechanisms or tax characterizations for different awards in the program based on a number of factors specific to each award.",
+        "displayed": false
       },
       {
         "q": "How can I learn more? Is there someone I can talk to about my project idea?",
-        "a": "We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href='mailto: grants@xrpl.org' title='email grants@xrpl.org' class='text-xgreen'>grants@xrpl.org</a>"
+        "a": "We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href='mailto: grants@xrpl.org' title='email grants@xrpl.org' class='text-xgreen'>grants@xrpl.org</a>",
+        "displayed": false
       }
     ],
     "subsection": {
