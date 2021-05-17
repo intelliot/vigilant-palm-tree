@@ -1,1 +1,1 @@
-Sitemap: https://xrpl.app/sitemap.txt
+Sitemap: https://xrplgrants.org/sitemap.txt
