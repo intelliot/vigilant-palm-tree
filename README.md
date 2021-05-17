@@ -6,7 +6,7 @@ TBD
 
 ``` bash
 # clone repo
-git clone https://github.com/xpring-eng/xrpl-developer-program-website.git
+git clone https://github.com/xpring-eng/xrplgrants.org.git
 
 # install dependencies
 yarn install

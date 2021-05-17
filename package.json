@@ -1,5 +1,5 @@
 {
-  "name": "xrpl-developer-program-website",
+  "name": "xrpl-grants",
   "version": "0.1.6",
   "description": "XRPL Grants Program Website",
   "author": "Javi <javi@ripple.com>",
@@ -10,7 +10,7 @@
     "changelog": "conventional-changelog --config ./commits.config.js -i CHANGELOG.md -s",
     "changelog:all": "conventional-changelog --config ./commits.config.js -i CHANGELOG.md -s -r 0",
     "dev": "NODE_ENV=development vue-cli-service serve",
-    "deploy:ghp": "GIT_DEPLOY_REPO=https://github.com/xpring-eng/xrpl-developer-program-website.git lib/deploy.sh"
+    "deploy:ghp": "GIT_DEPLOY_REPO=https://github.com/xpring-eng/xrplgrants.org.git lib/deploy.sh"
   },
   "dependencies": {
     "ua-parser-js": "^0.7.21",
