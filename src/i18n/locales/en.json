@@ -38,7 +38,7 @@
           "steps": [
             {
               "title": "Step 1",
-              "text": "Application submissions are accepted May 12-June 9, 2021"
+              "text": "Application submissions are accepted from May 25 - June 25, 2021"
             },
             {
               "title": "Step 2",
@@ -46,7 +46,7 @@
             },
             {
               "title": "Step 3",
-              "text": "Accepted projects are notified by June 23, 2021"
+              "text": "Accepted projects are notified by July 30, 2021"
             },
             {
               "title": "Step 4",
@@ -86,7 +86,7 @@
       }
     },
     "box_1": {
-      "title": "The deadline to apply for round one of the grants program is <span class='text-xgreen'>June 9, 2021</span>."
+      "title": "The deadline to apply for round one of the grants program is <span class='text-xgreen'>June 25, 2021</span>."
     },
     "apply": {
       "title": "Apply For an XRPL Grant Today",
@@ -151,7 +151,7 @@
     "content": [
       {
         "q": "When is the application deadline?",
-        "a": "May 31, 2021.",
+        "a": "June 25, 2021.",
         "displayed": false
       },
       {

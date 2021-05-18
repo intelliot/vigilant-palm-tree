@@ -1,8 +1,7 @@
 {
   "name": "xrpl-grants",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "XRPL Grants Program Website",
-  "author": "Javi <javi@ripple.com>",
   "license": "MIT",
   "scripts": {
     "build": "genversion lib/version.js && vue-cli-service build && cp dist/index.html dist/404.html",
