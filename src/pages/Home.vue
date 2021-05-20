@@ -1,23 +1,21 @@
 <template>
   <div class="bg-xblack">
     <section class="pt-4 md:pt-24 xHeroBg xHeroBgMobile">
-      <div class="md:pr-24 mx-16 flex flex-wrap flex-col md:flex-row items-center pHero">
+      <div class="md:pr-24 mx-30 flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-          <h1 class="my-4 text-6xl xbold leading-tight">
+          <h1 class="my-4 text-6xl xbold leading-tight preLine">
             {{ $t('home.hero.title') }}
           </h1>
           <p class="leading-normal text-md md:mb-8">
             {{ $t('home.hero.text') }}
           </p>
-          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xgreen text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-            {{ $t('home.hero.action') }}
-          </button>
+          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xgreen text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.hero.action') }}</button>
         </div>
       </div>
     </section>
     <section class="bg-xblack">
-      <div class="pr-4 md:pr-24 w-full mx-4 md:mx-16 md:mt-8">
-        <div class="md:flex">
+      <div class="pr-4 md:pr-24 w-full mx-4 md:mx-30">
+        <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.first.title') }}
@@ -32,7 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="md:flex">
+        <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.second.title') }}
@@ -47,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="md:flex">
+        <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.third.title') }}
@@ -55,7 +53,7 @@
           </div>
           <div class="md:w-2/3 sm:w-full p-2 md:flex">
             <div class="w-full md:px-10">
-              <div class="mb-8 text-md">
+              <div class="mb-14 text-md">
                 <ol>
                   <li class="align-top inline-block pr-6 mb-12 md:w-1/3" v-for="(item, index) in stepsContent" :key="index">
                     <h4 class="text-xgreen uppercase">{{ item.title }}</h4>
@@ -74,7 +72,7 @@
       </div>
     </section>
     <section class="md:py-8">
-      <div class="pr-4 md:pr-24 md:mx-6 flex flex-wrap pt-4 md:pb-12">
+      <div class="pr-4 md:pr-24 md:mx-20 flex flex-wrap pt-4 md:pb-12">
         <div class="w-full md:w-1/3 md:p-6 flex flex-col">
           <div class="flex-1 text-white">
               <h4 class="w-full font-bold text-2xl px-6">
@@ -126,14 +124,12 @@
       </div>
     </section>
     <section class="xBg2 bg-xgreen">
-      <div class="md:pl-16 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
+      <div class="md:pl-30 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <h3 class="mt-12 text-4xl text-xblack font-bold leading-tight">
             {{ $t('home.apply.title') }}
           </h3>
-          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xblack text-white font-bold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
-            {{ $t('home.apply.action') }}
-          </button>
+          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xblack text-white font-bold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.apply.action') }}</button>
         </div>
       </div>
     </section>

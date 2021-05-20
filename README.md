@@ -1,6 +1,6 @@
-# XRP Ledger Developer Program Website
+# XRPL Grants Website
 
-TBD
+XRPL Grants provides developer grants to help fund XRP Ledger projects.
 
 ## Build Setup
 

@@ -1,8 +1,8 @@
 # Contributing
 
-Thanks for considering a contribution to [xrpl-node-configurator](https://github.com/XRPLF/xrpl-node-configurator)!
+Thanks for considering a contribution!
 
-We're thrilled you're interested and your help is greatly appreciated. Contributing is a great way to learn about the [XRP Ledger](https://xrpl.org). We are happy to review your pull requests. To make the process as smooth as possible, please read this document and follow the stated guidelines.
+We're thrilled you're interested and your help is greatly appreciated. Contributing is a great way to learn. We are happy to review your pull requests. To make the process as smooth as possible, please read this document and follow the stated guidelines.
 
 ## About This Project
 
@@ -24,7 +24,7 @@ The first thing you will have to do is to install all dependencies:
 
 ``` bash
 # clone repo
-git clone https://github.com/XRPLF/xrpl-node-configurator.git
+git clone https://github.com/xpring-eng/xrplgrants.org.git
 
 # install dependencies
 yarn install

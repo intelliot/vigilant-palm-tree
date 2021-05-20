@@ -2,7 +2,7 @@
   <!--Footer-->
   <footer class="bg-xblack">
     <section class="md:py-8">
-      <div class="md:pl-4 mx-auto flex flex-wrap pt-4 pb-12">
+      <div class="pr-4 md:pr-24 md:mx-20 flex flex-wrap pt-4 md:pb-12">
         <div class="w-full md:w-1/3 md:p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 text-white">
               <h4 class="w-full font-bold text-3xl px-6">
