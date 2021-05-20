@@ -79,6 +79,7 @@ a:hover, button.link:hover {
 .pHero {
     padding-bottom: 120px;
     padding-top: 60px;
+    white-space: pre-line;
 
     @include media_mobile {
         padding-bottom: 30px;

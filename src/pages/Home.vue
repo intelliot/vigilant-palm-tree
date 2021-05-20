@@ -1,7 +1,7 @@
 <template>
   <div class="bg-xblack">
     <section class="pt-4 md:pt-24 xHeroBg xHeroBgMobile">
-      <div class="md:pr-24 mx-16 flex flex-wrap flex-col md:flex-row items-center pHero">
+      <div class="md:pr-24 mx-30 flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
           <h1 class="my-4 text-6xl xbold leading-tight">
             {{ $t('home.hero.title') }}
@@ -16,8 +16,8 @@
       </div>
     </section>
     <section class="bg-xblack">
-      <div class="pr-4 md:pr-24 w-full mx-4 md:mx-16 md:mt-8">
-        <div class="md:flex">
+      <div class="pr-4 md:pr-24 w-full mx-4 md:mx-30">
+        <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.first.title') }}
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="md:flex">
+        <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.second.title') }}
@@ -47,7 +47,7 @@
             </div>
           </div>
         </div>
-        <div class="md:flex">
+        <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
             <h3 class="text-4xl text-white font-bold leading-none mb-3">
               {{ $t('home.main.content.third.title') }}
