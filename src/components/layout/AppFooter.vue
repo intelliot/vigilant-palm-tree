@@ -22,7 +22,7 @@
             </label>
             <div class="p-6 mt-4">
               <input class="mb-6 appearance-none bg-xgray rounded w-full py-3 px-3 text-xgray leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" :placeholder="$t('home.bottom.content.second.placeholder')">
-              <button class="mt-4 text-md mx-auto lg:mx-0 hover:underline bg-xgreen text-black xbold rounded my-4 py-3 px-6 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
+              <button class="mt-4 text-md mx-auto lg:mx-0 bg-xgreen text-black xbold rounded my-4 py-3 px-6 focus:outline-none focus:shadow-outline">
                 {{ $t('home.bottom.content.second.action') }}
               </button>
             </div>

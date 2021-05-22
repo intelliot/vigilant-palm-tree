@@ -22,10 +22,6 @@ a:hover, button.link:hover {
     color: #19FF83;
 }
 
-.active-xgreen:focus {
-    color:#19FF83;
-}
-
 .xmenu:focus {
     color:#19FF83;
 }
@@ -87,12 +83,20 @@ a:hover, button.link:hover {
     white-space: pre-line;
 }
 
-.bg-xgreen {
-    background-color: #19FF83;
+.bg-xgreen-default {
+  background-color: #19FF83;
 }
 
-.bg-xgreen-over {
-    background-color: #0bd668;
+.bg-xgreen {
+    background-color: #19FF83;
+
+    &:hover {
+      background-color: #80FFBA;
+    }
+
+    &:active {
+      background-color: #00CC5E;
+    }
 }
 
 .text-xgreen {
@@ -103,8 +107,32 @@ a:hover, button.link:hover {
     background-color: #1D1D1D;
 }
 
+.bg-xblack-hover-active {
+  background-color: #1D1D1D;
+
+  &:hover {
+    background-color: #80FFBA;
+  }
+
+  &:active {
+    background-color: #00CC5E;
+  }
+}
+
 .text-xblack {
     color: #1D1D1D;
+}
+
+.text-white-hover-active {
+  color: white;
+
+  &:hover {
+    color: #1D1D1D;
+  }
+
+  &:active {
+    color: #1D1D1D;
+  }
 }
 
 .xbold {

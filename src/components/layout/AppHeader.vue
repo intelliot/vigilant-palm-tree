@@ -53,7 +53,7 @@
             </li>
           </ul>
           <button
-            class="my-2 md:ml-3 bg-xgreen hover:bg-xgreen-over xbold py-2 px-4 rounded"
+            class="my-2 md:ml-3 bg-xgreen xbold py-2 px-4 rounded"
           >
             {{ $t('header.apply') }}
           </button>

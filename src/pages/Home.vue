@@ -9,7 +9,7 @@
           <p class="leading-normal text-md md:mb-8 preLine">
             {{ $t('home.hero.text') }}
           </p>
-          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xgreen text-gray-800 xbold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.hero.action') }}</button>
+          <button class="text-xl mx-auto lg:mx-0 bg-xgreen text-gray-800 xbold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline">{{ $t('home.hero.action') }}</button>
         </div>
       </div>
     </section>
@@ -123,13 +123,13 @@
         </div>
       </div>
     </section>
-    <section class="xBg2 bg-xgreen">
+    <section class="xBg2 bg-xgreen-default">
       <div class="md:pl-30 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <h3 class="mt-12 text-4xl text-xblack xbold leading-tight">
             {{ $t('home.apply.title') }}
           </h3>
-          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xblack text-white xbold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.apply.action') }}</button>
+          <button class="text-xl mx-auto lg:mx-0 bg-xblack-hover-active text-white-hover-active xbold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline">{{ $t('home.apply.action') }}</button>
         </div>
       </div>
     </section>
