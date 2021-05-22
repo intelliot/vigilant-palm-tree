@@ -6,7 +6,7 @@
           <h1 class="my-4 text-6xl xbold leading-tight preLine">
             {{ $t('home.hero.title') }}
           </h1>
-          <p class="leading-normal text-md md:mb-8">
+          <p class="leading-normal text-md md:mb-8 preLine">
             {{ $t('home.hero.text') }}
           </p>
           <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xgreen text-gray-800 xbold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.hero.action') }}</button>
@@ -56,7 +56,7 @@
               <div class="mb-14 text-md">
                 <ol>
                   <li class="align-top inline-block pr-6 mb-12 md:w-1/3" v-for="(item, index) in stepsContent" :key="index">
-                    <h4 class="text-xgreen uppercase">{{ item.title }}</h4>
+                    <h4 class="text-xgreen uppercase xbold">{{ item.title }}</h4>
                     <p class="mt-2">{{ item.text }}</p>
                   </li>
                 </ol>

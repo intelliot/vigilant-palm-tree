@@ -38,7 +38,7 @@
           "steps": [
             {
               "title": "Primer paso",
-              "text": "Presentaciones de solicitudes del 25 de Mayo al 25 de Junio de 2021"
+              "text": "Presentaciones de solicitudes del 25 de Mayo al 9 de Junio de 2021"
             },
             {
               "title": "Segundo paso",
@@ -151,7 +151,7 @@
     "content": [
       {
         "q": "¿Cuándo es la fecha límite para solicitar tu ayuda?",
-        "a": "25 de Junio de 2021.",
+        "a": "9 de Junio de 2021.",
         "displayed": false
       },
       {
