@@ -3,7 +3,7 @@
     <section class="md:pt-24 xHeroBg">
       <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 class="md:ml-12 mt-10 text-5xl pt-10 font-bold leading-tight">
+          <h1 class="md:ml-12 mt-10 text-5xl pt-10 xbold leading-tight">
             {{ $t('faq.title') }}
           </h1>
         </div>

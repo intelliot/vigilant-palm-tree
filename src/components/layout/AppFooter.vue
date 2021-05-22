@@ -5,7 +5,7 @@
       <div class="pr-4 md:pr-24 md:mx-20 flex flex-wrap pt-4 md:pb-12">
         <div class="w-full md:w-1/3 md:p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 text-white">
-              <h4 class="w-full font-bold text-3xl px-6">
+              <h4 class="w-full xbold text-3xl px-6">
                 {{ $t('home.bottom.content.first.title') }}
               </h4>
               <p class="mt-4 px-6 mb-3" v-html="$t('home.bottom.content.first.text')"></p>
@@ -17,12 +17,12 @@
         </div>
         <div class="w-full md:w-1/3 md:p-6 mt-10 md:mt-0 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 text-white">
-            <label for="email" class="w-full font-bold text-3xl px-6 block">
+            <label for="email" class="w-full xbold text-3xl px-6 block">
               {{ $t('home.bottom.content.second.title') }}
             </label>
             <div class="p-6 mt-4">
               <input class="mb-6 appearance-none bg-xgray rounded w-full py-3 px-3 text-xgray leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" :placeholder="$t('home.bottom.content.second.placeholder')">
-              <button class="mt-4 text-md mx-auto lg:mx-0 hover:underline bg-xgreen text-black font-bold rounded my-4 py-3 px-6 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
+              <button class="mt-4 text-md mx-auto lg:mx-0 hover:underline bg-xgreen text-black xbold rounded my-4 py-3 px-6 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">
                 {{ $t('home.bottom.content.second.action') }}
               </button>
             </div>
@@ -30,7 +30,7 @@
         </div>
         <div class="w-full md:w-1/3 md:p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1">
-            <h4 class="w-full font-bold text-3xl px-6">
+            <h4 class="w-full xbold text-3xl px-6">
               {{ $t('home.bottom.content.third.title') }}
             </h4>
 

@@ -35,8 +35,8 @@
           class="w-full lg:flex lg:w-auto hidden mt-2 lg:mt-0 sm:bg-xgray lg:bg-transparent text-black md:p-4 lg:p-0 z-20 rounded-md"
           id="nav-content"
         >
-          <ul class="md:absolute md:left-44 md:pt-2 text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
-            <li class="md:ml-30">
+          <ul class="md:absolute md:left-74 md:pt-2 text-lg list-reset md:flex md:justify-end md:flex-1 md:items-center">
+            <li>
               <router-link
                 class="inline-block text-white no-underline py-2 md:px-4"
                 :class="currentRouteName === 'about' ? 'xbold underline text-xgreen' : ''"
@@ -53,12 +53,12 @@
             </li>
           </ul>
           <button
-            class="my-2 md:ml-3 bg-xgreen hover:bg-xgreen-over font-bold py-2 px-4 rounded"
+            class="my-2 md:ml-3 bg-xgreen hover:bg-xgreen-over xbold py-2 px-4 rounded"
           >
             {{ $t('header.apply') }}
           </button>
           <hr class="mt-2" />
-          <div class="relative md:ml-14 pt-2 md:pt-4 md:mr-10">
+          <div class="relative md:ml-14 pt-2 md:pt-4 md:mr-26">
             <label @click="showLangMenu()" for="languagebox" class="md:flex md:items-center md:space-x-1 cursor-pointer">
               <span class="text-white">{{ $t(`language.${currentLocale}.title`) }}</span>
               <img src="/img/down_arrow.svg" class="inline pt-2 md:pt-0" alt="" title="">

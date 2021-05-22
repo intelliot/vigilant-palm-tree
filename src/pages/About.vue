@@ -3,7 +3,7 @@
     <section class="md:pt-24 xHeroBg">
       <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 class="md:ml-10 mt-10 text-5xl pt-10 font-bold leading-tight">
+          <h1 class="md:ml-10 mt-10 text-5xl pt-10 xbold leading-tight">
             {{ $t('about.title') }}
           </h1>
         </div>
@@ -13,7 +13,7 @@
       <div class="w-full mx-auto">
         <div class="md:flex">
           <div class="p-2 md:max-w-md md:w-1/3">
-            <h3 class="text-4xl text-white font-bold leading-none mb-3">
+            <h3 class="text-4xl text-white xbold leading-none mb-3">
               {{ $t('about.content.first.title') }}
             </h3>
           </div>
@@ -28,7 +28,7 @@
         </div>
         <div class="md:flex md:mt-16">
           <div class="p-2 md:max-w-md md:w-1/3">
-            <h3 class="text-4xl text-white font-bold leading-none mb-3">
+            <h3 class="text-4xl text-white xbold leading-none mb-3">
               {{ $t('about.content.second.title') }}
             </h3>
           </div>
@@ -45,7 +45,7 @@
         </div>
         <div class="md:flex md:mt-16">
           <div class="p-2 md:max-w-md md:w-1/3 sm:w-full">
-            <h3 class="text-4xl text-white font-bold leading-none mb-3">
+            <h3 class="text-4xl text-white xbold leading-none mb-3">
               {{ $t('about.content.third.title') }}
             </h3>
           </div>

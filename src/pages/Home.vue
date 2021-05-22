@@ -17,7 +17,7 @@
       <div class="pr-4 md:pr-24 w-full mx-4 md:mx-30">
         <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
-            <h3 class="text-4xl text-white font-bold leading-none mb-3">
+            <h3 class="text-4xl text-white xbold leading-none mb-3">
               {{ $t('home.main.content.first.title') }}
             </h3>
           </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
-            <h3 class="text-4xl text-white font-bold leading-none mb-3">
+            <h3 class="text-4xl text-white xbold leading-none mb-3">
               {{ $t('home.main.content.second.title') }}
             </h3>
           </div>
@@ -47,7 +47,7 @@
         </div>
         <div class="md:flex md:mt-26">
           <div class="p-2 md:max-w-md md:w-1/3">
-            <h3 class="text-4xl text-white font-bold leading-none mb-3">
+            <h3 class="text-4xl text-white xbold leading-none mb-3">
               {{ $t('home.main.content.third.title') }}
             </h3>
           </div>
@@ -68,14 +68,14 @@
     </section>
     <section class="md:pt-20 xBg">
       <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
-        <h3 class="w-1/2 mx-auto my-2 text-3xl font-bold leading-tight text-center text-white" v-html="$t('home.box_1.title')"></h3>
+        <h3 class="w-1/2 mx-auto my-2 text-3xl xbold leading-tight text-center text-white" v-html="$t('home.box_1.title')"></h3>
       </div>
     </section>
     <section class="md:py-8">
       <div class="pr-4 md:pr-24 md:mx-20 flex flex-wrap pt-4 md:pb-12">
         <div class="w-full md:w-1/3 md:p-6 flex flex-col">
           <div class="flex-1 text-white">
-              <h4 class="w-full font-bold text-2xl px-6">
+              <h4 class="w-full xbold text-2xl px-6">
                 {{ $t('home.more.content.first.title') }}
               </h4>
               <p class="w-full px-6 mt-4">
@@ -84,14 +84,14 @@
               <p class="mt-4 px-6 mb-3" v-html="$t('home.more.content.first.text')"></p>
           </div>
           <div class="flex-none text-white p-6">
-            <a :href="$t('home.more.content.first.link')" target="_blank" class="font-bold">
+            <a :href="$t('home.more.content.first.link')" target="_blank" class="xbold">
               {{ $t('home.more.content.first.action') }} <img class="inline align-middle ml-2" :alt="$t('home.more.content.first.action')" :title="$t('home.more.content.first.action')" src="/img/right_arrow.svg">
             </a>
           </div>
         </div>
         <div class="w-full md:w-1/3 md:p-6 flex flex-col">
           <div class="flex-1 text-white">
-            <h4 class="w-full font-bold text-2xl px-6">
+            <h4 class="w-full xbold text-2xl px-6">
               {{ $t('home.more.content.second.title') }}
             </h4>
             <p class="w-full mt-4 px-6">
@@ -100,14 +100,14 @@
             <p class="mt-4 px-6 mb-3" v-html="$t('home.more.content.second.text')"></p>
           </div>
           <div class="flex-none text-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <a :href="$t('home.more.content.second.link')" target="_blank" class="font-bold">
+            <a :href="$t('home.more.content.second.link')" target="_blank" class="xbold">
                 {{ $t('home.more.content.second.action') }} <img class="inline align-middle ml-2" :alt="$t('home.more.content.second.action')" :title="$t('home.more.content.second.action')" src="/img/right_arrow.svg">
             </a>
           </div>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col">
           <div class="flex-1">
-            <h4 class="w-full font-bold text-2xl md:px-6">
+            <h4 class="w-full xbold text-2xl md:px-6">
               {{ $t('home.more.content.third.title') }}
             </h4>
             <p class="w-full mt-4 md:px-6">
@@ -116,7 +116,7 @@
             <p class="mt-4 md:px-6 mb-3" v-html="$t('home.more.content.third.text')"></p>
           </div>
           <div class="flex-none text-white md:p-6">
-              <a :href="$t('home.more.content.third.link')" target="_blank" class="font-bold">
+              <a :href="$t('home.more.content.third.link')" target="_blank" class="xbold">
                 {{ $t('home.more.content.third.action') }} <img class="inline align-middle ml-2" :alt="$t('home.more.content.third.action')" :title="$t('home.more.content.third.action')" src="/img/right_arrow.svg">
               </a>
           </div>
@@ -126,10 +126,10 @@
     <section class="xBg2 bg-xgreen">
       <div class="md:pl-30 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h3 class="mt-12 text-4xl text-xblack font-bold leading-tight">
+          <h3 class="mt-12 text-4xl text-xblack xbold leading-tight">
             {{ $t('home.apply.title') }}
           </h3>
-          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xblack text-white font-bold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.apply.action') }}</button>
+          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xblack text-white xbold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.apply.action') }}</button>
         </div>
       </div>
     </section>
