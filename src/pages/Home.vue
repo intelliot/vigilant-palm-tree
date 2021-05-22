@@ -66,7 +66,7 @@
         </div>
       </div>
     </section>
-    <section class="md:pt-20 xBg">
+    <section class="xl:pt-20 bg-no-repeat bg-contain xl:bg-cover xBg">
       <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <h3 class="w-1/2 mx-auto my-2 text-3xl xbold leading-tight text-center text-white" v-html="$t('home.box_1.title')"></h3>
       </div>
