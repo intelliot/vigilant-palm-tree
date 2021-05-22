@@ -3,13 +3,13 @@
     <section class="md:pt-24 xHeroBg">
       <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 class="md:ml-10 mt-10 text-5xl pt-10 xbold leading-tight">
+          <h1 class="md:ml-24 mt-10 text-5xl pt-10 xbold leading-tight">
             {{ $t('about.title') }}
           </h1>
         </div>
       </div>
     </section>
-    <section class="bg-xblack md:ml-10 md:mt-16">
+    <section class="bg-xblack md:ml-24 md:mt-16">
       <div class="w-full mx-auto">
         <div class="md:flex">
           <div class="p-2 md:max-w-md md:w-1/3">

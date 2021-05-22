@@ -90,7 +90,8 @@
     },
     "apply": {
       "title": "Apply For an XRPL Grant Today",
-      "action": "Apply Now"
+      "action": "Apply Now",
+      "link": "https://submit.xrplgrants.org/submit/194620/xrp-ledger-grants-application-form"
     },
     "bottom": {
       "content": {

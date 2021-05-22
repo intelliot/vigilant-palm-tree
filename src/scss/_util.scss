@@ -17,7 +17,7 @@
     background: #23292F;
 }
 
-a:hover, button.link:hover {
+a:hover :not(button) {
     text-decoration: underline;
     color: #19FF83;
 }

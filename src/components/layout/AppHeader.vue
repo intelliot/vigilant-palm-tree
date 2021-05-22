@@ -52,11 +52,13 @@
               >
             </li>
           </ul>
-          <button
-            class="my-2 md:ml-3 bg-xgreen xbold py-2 px-4 rounded"
-          >
-            {{ $t('header.apply') }}
-          </button>
+          <a :href="$t('home.apply.link')">
+            <button
+              class="my-2 md:ml-3 bg-xgreen xbold py-2 px-4 rounded"
+            >
+              {{ $t('header.apply') }}
+            </button>
+          </a>
           <hr class="mt-2" />
           <div class="relative md:ml-14 pt-2 md:pt-4 md:mr-26">
             <label @click="showLangMenu()" for="languagebox" class="md:flex md:items-center md:space-x-1 cursor-pointer">

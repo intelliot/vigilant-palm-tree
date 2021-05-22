@@ -9,7 +9,9 @@
           <p class="leading-normal text-md md:mb-8 preLine">
             {{ $t('home.hero.text') }}
           </p>
-          <button class="text-xl mx-auto lg:mx-0 bg-xgreen text-gray-800 xbold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline">{{ $t('home.hero.action') }}</button>
+          <a :href="$t('home.apply.link')">
+            <button class="text-xl mx-auto lg:mx-0 bg-xgreen text-gray-800 xbold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline">{{ $t('home.hero.action') }}</button>
+          </a>
         </div>
       </div>
     </section>
@@ -129,7 +131,9 @@
           <h3 class="mt-12 text-4xl text-xblack xbold leading-tight">
             {{ $t('home.apply.title') }}
           </h3>
-          <button class="text-xl mx-auto lg:mx-0 bg-xblack-hover-active text-white-hover-active xbold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline">{{ $t('home.apply.action') }}</button>
+          <a :href="$t('home.apply.link')">
+            <button class="text-xl mx-auto lg:mx-0 bg-xblack-hover-active text-white-hover-active xbold rounded my-6 py-4 px-8 focus:outline-none focus:shadow-outline">{{ $t('home.apply.action') }}</button>
+          </a>
         </div>
       </div>
     </section>

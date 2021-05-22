@@ -1,7 +1,7 @@
 <template>
   <div class="bg-xblack">
     <section class="md:pt-24 xHeroBg">
-      <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
+      <div class="px-20 mx-auto flex flex-wrap flex-col md:flex-row items-center pHero">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <h1 class="md:ml-12 mt-10 text-5xl pt-10 xbold leading-tight">
             {{ $t('faq.title') }}
@@ -10,7 +10,7 @@
       </div>
     </section>
     <section class="md:py-6">
-      <div class="mx-auto px-4 md:px-12">
+      <div class="mx-auto px-4 md:px-30">
         <div class="md:my-5">
           <button @click="expandAll" class="bg-transparent focus:outline-none hover:underline py-2 link">
             {{ $t('faq.expand') }}

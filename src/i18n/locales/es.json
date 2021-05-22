@@ -90,7 +90,8 @@
     },
     "apply": {
       "title": "Pide una ayuda hoy",
-      "action": "Solicítala ahora"
+      "action": "Solicítala ahora",
+      "link": "https://submit.xrplgrants.org/submit/194620/xrp-ledger-grants-application-form"
     },
     "bottom": {
       "content": {
