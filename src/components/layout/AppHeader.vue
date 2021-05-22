@@ -13,7 +13,7 @@
             class="toggleColour text-white no-underline hover:no-underline text-xl lg:text-2xl"
             to="/"
           >
-            <span class="font-bold">{{ $t('header.title') }}</span>
+            <span class="xbold">{{ $t('header.title') }}</span>
           </router-link>
         </div>
         <div class="block lg:hidden pr-4">

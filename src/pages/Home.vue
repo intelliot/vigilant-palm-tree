@@ -9,7 +9,7 @@
           <p class="leading-normal text-md md:mb-8">
             {{ $t('home.hero.text') }}
           </p>
-          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xgreen text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.hero.action') }}</button>
+          <button class="text-xl mx-auto lg:mx-0 hover:underline bg-xgreen text-gray-800 xbold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out">{{ $t('home.hero.action') }}</button>
         </div>
       </div>
     </section>
