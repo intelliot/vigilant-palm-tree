@@ -11,8 +11,8 @@
               <p class="mt-4 px-6 mb-3" v-html="$t('home.bottom.content.first.text')"></p>
           </div>
           <div class="flex-none text-white pl-6">
-            <img src="/img/xrpl_labs_logo.svg" alt="Logo: XRPL Labs" title="Logo XRPL Labs">
-            <img src="/img/ripplex_logo.svg" class="mt-2" alt="Logo: RippleX" title="Logo RippleX">
+            <img src="/img/xrpl_labs_logo.svg" class="mt-4" alt="Logo: XRPL Labs" title="Logo XRPL Labs">
+            <img src="/img/ripplex_logo.svg" class="mt-9" alt="Logo: RippleX" title="Logo RippleX">
           </div>
         </div>
         <div class="w-full md:w-1/3 md:p-6 mt-10 md:mt-0 flex flex-col flex-grow flex-shrink">
@@ -21,10 +21,7 @@
               {{ $t('home.bottom.content.second.title') }}
             </label>
             <div class="p-6 mt-4">
-              <input class="mb-6 appearance-none bg-xgray rounded w-full py-3 px-3 text-xgray leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" :placeholder="$t('home.bottom.content.second.placeholder')">
-              <button class="mt-4 text-md mx-auto lg:mx-0 bg-xgreen text-black xbold rounded my-4 py-3 px-6 focus:outline-none focus:shadow-outline">
-                {{ $t('home.bottom.content.second.action') }}
-              </button>
+              <div id="hubspotForm" v-once></div>
             </div>
           </div>
         </div>
@@ -35,8 +32,9 @@
             </h4>
 
             <p class="mt-4 px-6 mb-3">
-              <img src="/img/envelope.svg" class="inline-block pt-2 mr-3" alt="Email" title="Email">
-              grants@xrpl.org
+              <a href="mailto:info@xrplgrants.org">
+                <img src="/img/envelope.svg" class="inline-block pt-2 mr-3" alt="Email" title="Email">info@xrplgrants.org
+              </a>
             </p>
           </div>
         </div>
@@ -64,6 +62,26 @@ export default class AppFooter extends Vue {
   version = require('../../../lib/version')
   created () {
     //
+  }
+}
+</script>
+
+<script>
+  export default {
+    mounted() {
+    const script = document.createElement("script");
+    script.src="https://js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          region: "na1",
+          portalId: "8186536",
+          formId: "b61423e5-1949-4ebc-965d-63c1c7fb723e",
+          target: "#hubspotForm"
+        })
+      }
+    })
   }
 }
 </script>

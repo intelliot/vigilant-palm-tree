@@ -18,27 +18,27 @@
   "home": {
     "hero": {
       "title": "Come Build on \nthe XRP Ledger",
-      "text": "Apply for a developer community grant to fund your \nnext XRP Ledger (XRPL) project.",
+      "text": "Apply for a developer grant to fund your \nnext XRP Ledger (XRPL) project.",
       "action": "Apply Now"
     },
     "main": {
       "content": {
         "first": {
-          "title": "About the XRPL App Grants Program",
-          "textLeft": "The XRP Ledger is an open source, decentralized and permissionless public blockchain. XRPL Grants funds open-source projects that advance the growing XRP Ledger ecosystem.",
-          "textRight": "We fund both core technology and end-user applications in key areas including, but not limited to: <ul class='list-disc ml-8 mt-2'><li>Consumer use cases</li><li>Non-Fungible Tokens (NFTs)</li><li>Core infrastructure</li><li>Developer tooling</li><li>Developer UX</li><li>Security</li></ul>"
+          "title": "About XRPL Grants",
+          "textLeft": "The XRP Ledger is an open source, decentralized and permissionless public blockchain. XRPL Grants fund select open-source projects that continue to advance the growing XRP Ledger community.",
+          "textRight": "We fund both select core technology and end-user applications including, but not limited to: <ul class='list-disc ml-8 mt-2'><li>Non-Fungible Tokens (NFTs)</li><li>Core infrastructure</li><li>Developer tooling</li><li>Developer UX</li><li>Security</li></ul>"
         },
         "second": {
           "title": "First Round of Applications Now Open",
-          "textLeft": "We will consider any project that builds on the XRP Ledger and involves some technical development. <br><br>Our focus area for the first round is to support the development of NFTs (Non-Fungible Tokens) on the XRP Ledger.",
-          "textRight": "If you are interested in this focus area, see below for a few project ideas:<ul class='list-disc ml-8 mt-2'><li>An XRPL-based NFT Marketplace</li><li>An XRPL-based NFT Issuance platform (minting)</li><li>Wallet support for XRPL-based NFTs</li></ul>"
+          "textLeft": "We will consider any project that builds on the XRP Ledger and involves some technical development.",
+          "textRight": "Our focus area for the first round relates to the development of NFTs (Non-Fungible Tokens) on the XRP Ledger such as: <ul class='list-disc ml-8 mt-2'><li>An XRPL-based NFT Marketplace</li><li>An XRPL-based NFT Issuance platform (minting)</li><li>Wallet support for XRPL-based NFTs</li><li>Tools and services for XRPL-based NFTs</li></ul>"
         },
         "third": {
-          "title": "XRPL App Grants Application and Selection Process",
+          "title": "XRPL Grants Application and Selection Process",
           "steps": [
             {
               "title": "Step 1",
-              "text": "Application submissions are accepted from May 25 - June 9, 2021"
+              "text": "Create an initial prototype and submit your application"
             },
             {
               "title": "Step 2",
@@ -46,15 +46,15 @@
             },
             {
               "title": "Step 3",
-              "text": "Accepted projects are notified by July 30, 2021"
+              "text": "Accepted projects are notified"
             },
             {
               "title": "Step 4",
-              "text": "Grantees undergo onboarding, milestone setting and mentor matching"
+              "text": "Grantees receive funding and are matched with mentors"
             },
             {
               "title": "Step 5",
-              "text": "Grant round is completed and final interviews are conducted"
+              "text": "After 3-4 months, final interviews are conducted"
             }
           ]
         }
@@ -65,21 +65,21 @@
         "first": {
           "title": "About the XRP Ledger",
           "subtitle": "A high-performance, decentralized blockchain",
-          "text": "The XRP Ledger is open source and permissionless, delivering developers the ultimate utility on a public blockchain.",
-          "action": "Learn more",
-          "link": "https://xrpl.org/index.html"
+          "text": "The XRP Ledger is open source and permissionless, delivering developers powerful utility on a public blockchain.",
+          "action": "Learn More",
+          "link": "https://xrpl.org/xrp-ledger-overview.html"
         },
         "second": {
           "title": "Technical Documentation",
           "subtitle": "XRPL is built to securely move any form of value",
-          "text": "By building on the XRP Ledger, developers can easily and securely integrate payments, cryptocurrencies, non-fungible tokens (NFTs) and other forms of value into their applications. ",
+          "text": "By building on the XRP Ledger, developers can easily and securely integrate payments, cryptocurrencies, non-fungible tokens (NFTs) and other forms of value into their applications.",
           "action": "View Docs",
           "link": "https://xrpl.org/docs.html"
         },
         "third": {
           "title": "Frequently Asked Questions",
           "subtitle": "Get more details on the XRPL Grants program",
-          "text": "What types of open source projects will be considered? What is the range of award amounts? Learn more in the FAQs.",
+          "text": "What types of open source projects will be considered? What is the range of award amounts? Learn more in the FAQ.",
           "action": "Read FAQ",
           "link": "/faq"
         }
@@ -97,7 +97,7 @@
       "content": {
         "first": {
           "title": "Help Build the Internet of Value",
-          "text": "The XRPL Grants Program supports the XRP Ledger’s open source ecosystem in order to boost inclusive standards and innovation in the Internet of Value.<br><br>Supported by:"
+          "text": "The XRPL Grants program seeks to enable others to build inclusive standards leveraging the XRP Ledger’s open source technology and further innovate in the Internet of Value.<br><br>Supported by:"
         },
         "second": {
           "title": "Get Updates Delivered to Your Inbox",
@@ -119,7 +119,7 @@
         "textRight": "Key properties of the XRP Ledger include: <ul class='list-disc ml-8 mt-2'><li>Censorship-resistant transaction processing</li><li>A fast and efficient consensus algorithm that can settle transactions in 3-5 seconds and process up to 1500 transactions per second</li><li>An on-ledger Decentralized Exchange.</li></ul>"
       },
       "second": {
-        "title": "Partners Supporting XRPL App Grants",
+        "title": "Partners Supporting XRPL Grants",
         "textLeft": "XRPL Labs builds software for the XRP Ledger & tools for XRP Ledger developers. The flagship product by XRPL Labs is XUMM: a non custodial wallet and platform where developers, retail and end users can meet up to get the most out of the XRP Ledger.",
         "textRight": "RippleX champions the builders of tomorrow by providing the infrastructure, tools, services, programs and support for creation on XRPL (the XRP Ledger). With this support, an open community of developers can advance the solutions and innovation needed to allow businesses, consumers, institutions and governments to fuel the engine of a new digital economy."
       },
@@ -192,7 +192,7 @@
       },
       {
         "q": "How can I learn more? Is there someone I can talk to about my project idea?",
-        "a": "We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href='mailto: grants@xrpl.org' title='email grants@xrpl.org' class='text-xgreen'>grants@xrpl.org</a>",
+        "a": "We would love to talk to you about your project idea or answer any questions you may have. Please contact us at <a href='mailto:info@xrplgrants.org' title='email info@xrplgrants.org' class='text-xgreen'>info@xrplgrants.org</a>",
         "displayed": false
       }
     ],
