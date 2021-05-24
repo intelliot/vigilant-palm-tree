@@ -54,25 +54,11 @@
           </ul>
           <a :href="$t('home.apply.link')">
             <button
-              class="my-2 md:ml-3 bg-xgreen xbold py-2 px-4 rounded"
+              class="my-2 md:ml-3 bg-xgreen xbold py-2 px-4 rounded mr-30"
             >
               {{ $t('header.apply') }}
             </button>
           </a>
-          <hr class="mt-2" />
-          <div class="relative md:ml-14 pt-2 md:pt-4 md:mr-26">
-            <label @click="showLangMenu()" for="languagebox" class="md:flex md:items-center md:space-x-1 cursor-pointer">
-              <span class="text-white">{{ $t(`language.${currentLocale}.title`) }}</span>
-              <img src="/img/down_arrow.svg" class="inline pt-2 md:pt-0" alt="" title="">
-            </label>
-            <div v-if="langMenuDisplayed" class="md:absolute mt-1 md:right-0.5 md:top-full md:min-w-max rounded bg-xblack transition delay-75 ease-in-out z-10">
-                <ul class="block text-white p-0 m-0">
-                  <li class="mb-2"><button @click="setLocale('en')" :title="$t('language.en.title')" class="lang border-0 btn btn-default focus:outline-none">{{ $t('language.en.title') }}</button></li>
-                  <li class="mb-2"><button @click="setLocale('es')" :title="$t('language.es.title')" class="lang border-0 btn btn-default focus:outline-none">{{ $t('language.es.title') }}</button></li>
-                </ul>
-            </div>
-          </div>
-          <hr class="mt-2" />
         </div>
       </div>
     </nav>
